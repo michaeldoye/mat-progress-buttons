@@ -45,13 +45,10 @@ import { MatProgressButtons } from 'mat-progress-buttons';
 
 
 @NgModule({
-  declarations: [ ... ],
   imports: [
     // Specify as an import
     MatProgressButtons
-  ],
-  // Add the Api service
-  providers: [ ... ]
+  ]
 })
 export class AppModule { }
 ```
