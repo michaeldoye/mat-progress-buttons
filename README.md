@@ -43,7 +43,7 @@ export class AppModule { }
 
 Once MatProgressButtons is imported, you can use the components:
 
-## Preogress Bar Button:
+## Progress Bar Button:
 
 ```html
 <progress-bar-button [options]="options" (click)="someFunc()"></progress-bar-button>
