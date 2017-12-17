@@ -1,18 +1,20 @@
 import { Component, Input } from '@angular/core';
+import { ButtonOpts } from './button-options.interface';
 
 @Component({
   selector: 'progress-bar-button',
   template: `
-    <button mat-raised-button 
+    <button mat-button
       [color]="options.buttonColor" 
       [class.active]="options.active"
+      [class.mat-raised-button]="options.raised"
       [disabled]="options.active">
 
         <span>{{ options.text }}</span>
 
         <mat-progress-bar
           *ngIf="options.active"
-          [color]="options.spinnerColor"
+          [color]="options.barColor"
           class="bar" 
           [mode]="options.mode"
           [value]="options.value">
@@ -30,6 +32,5 @@ import { Component, Input } from '@angular/core';
   `]
 })
 export class BarButton {
-  @Input() options: any;
+  @Input() options: ButtonOpts;
 }
-

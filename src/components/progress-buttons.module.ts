@@ -9,12 +9,12 @@ import {
   MatRippleModule,
 } from '@angular/material';
 
-// Imports
 import { SpinnerButton } from './spinner-button.component';
 import { BarButton } from './bar-button.component';
-// Exports
+
 export { SpinnerButton } from './spinner-button.component';
 export { BarButton } from './bar-button.component';
+export { ButtonOpts } from './button-options.interface';
 
 @NgModule({
   imports: [
