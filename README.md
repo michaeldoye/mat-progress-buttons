@@ -17,7 +17,7 @@ Import in any Angular application by running:
 $ npm install --save mat-progress-buttons
 ```
 
-Install Material Design: ([Getting Started](https://material.angular.io/guide/getting-started))
+Install Angular Material: ([Getting Started](https://material.angular.io/guide/getting-started))
 
 ```bash
 $ npm install --save @angular/material @angular/cdk
@@ -36,24 +36,19 @@ Import a material theme into your `style.css` file:
 ```
 
 
-Then from your `AppModule`:
+Then import `MatProgressButtons` into your `AppModule`:
 
 ```typescript
-...
-// Import MatProgressButtons
 import { MatProgressButtons } from 'mat-progress-buttons';
 
-
 @NgModule({
-  imports: [
-    // Specify as an import
-    MatProgressButtons
-  ]
+  imports: [ MatProgressButtons ]
 })
+
 export class AppModule { }
 ```
 
-Once MatProgressButtons is imported, you can use the components:
+That's it! Once imported, you can use the components:
 
 ## Progress Bar Button:
 
