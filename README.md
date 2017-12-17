@@ -43,7 +43,7 @@ export class AppModule { }
 
 Once MatProgressButtons is imported, you can use the components:
 
-Bar Button:
+## Preogress Bar Button:
 
 ```html
 <progress-bar-button [options]="options" (click)="someFunc()"></progress-bar-button>
@@ -65,6 +65,8 @@ spinnerColor?: string, // primary/accent/warn
 mode?: string, // determinate/intederminate
 value?: number // used if mode is determinate
 ```
+
+## Progress Spinner Button:
 
 ```html 
 <spinner-button [options]="options" (click)="someFunc()"></spinner-button>
