@@ -58,12 +58,14 @@ API:
 Options:
 
 ```json
-active: boolean, // is loading
-text: string, // button text
-buttonColor?: string, // primary/accent/warn
-spinnerColor?: string, // primary/accent/warn
-mode?: string, // determinate/intederminate
-value?: number // used if mode is determinate
+{
+  active: boolean, // is loading
+  text: string, // button text
+  buttonColor?: string, // primary/accent/warn
+  spinnerColor?: string, // primary/accent/warn
+  mode?: string, // determinate/intederminate
+  value?: number // used if mode is determinate
+}
 ```
 
 ```html 
@@ -79,12 +81,14 @@ API:
 Options:
 
 ```json
-active: boolean, // is loading
-text: string, // button text
-buttonColor?: string, // primary/accent/warn
-spinnerColor?: string, // primary/accent/warn
-mode?: string, // determinate/intederminate
-value?: number // used if mode is determinate
+{
+  active: boolean, // is loading
+  text: string, // button text
+  buttonColor?: string, // primary/accent/warn
+  spinnerColor?: string, // primary/accent/warn
+  mode?: string, // determinate/intederminate
+  value?: number // used if mode is determinate
+}
 ```
 
 

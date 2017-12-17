@@ -1,7 +1,7 @@
 {
   "name": "mat-progress-buttons",
   "author": "Michael Doye",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "MIT",
   "module": "mat-progress-buttons.es5.js",
   "es2015": "mat-progress-buttons.js",
