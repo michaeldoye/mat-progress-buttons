@@ -1,3 +1,6 @@
 dist
 build
 node_modules
+
+build.ps1
+build.sh
