@@ -20,6 +20,18 @@ Install Material Design: ([Getting Started](https://material.angular.io/guide/ge
 $ npm install --save @angular/material @angular/cdk
 ```
 
+Install Angular Animations:
+
+```bash
+npm install --save @angular/animations
+```
+
+Import a material theme into your `style.css` file:
+
+```css
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+```
+
 
 Then from your `AppModule`:
 
