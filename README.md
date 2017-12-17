@@ -1,6 +1,9 @@
 # Angular Material Design Progress Buttons 
 Very simple Angular4+ Material Design progress buttons
 
+
+[![npm version](https://badge.fury.io/js/mat-progress-buttons.svg)](https://www.npmjs.com/package/mat-progress-buttons)  [![GitHub issues](https://img.shields.io/github/issues/michaeldoye/mat-progress-buttons.svg)](https://github.com/michaeldoye/mat-progress-buttons/issues)
+
 ## Demo
 
 [**StackBlitz Demo**](https://stackblitz.com/edit/mat-progress-buttons-demo)

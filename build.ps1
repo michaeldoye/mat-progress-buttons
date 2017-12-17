@@ -31,3 +31,4 @@ Copy-Item -Path src/package.json -Destination dist/package.json
 Copy-Item -Path src/package.json -Destination build/package.json
 Copy-Item -Path README.md -Destination build/README.md
 Copy-Item -Path README.md -Destination dist/README.md
+Copy-Item -Path .travis.yml -Destination build/.travis.yml
