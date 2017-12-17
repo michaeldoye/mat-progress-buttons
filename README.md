@@ -3,7 +3,7 @@ Very simple Angular4+ Material Design progress buttons
 
 ## Demo
 
-[**StackBlitz Demo**](https://stackblitz.com/edit/custom-progress-butons)
+[**StackBlitz Demo**](https://stackblitz.com/edit/mat-progress-buttons-demo)
 
 
 ## Usage

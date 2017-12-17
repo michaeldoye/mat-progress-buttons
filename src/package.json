@@ -1,6 +1,6 @@
 {
   "name": "mat-progress-buttons",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "module": "mat-progress-buttons.es5.js",
   "es2015": "mat-progress-buttons.js",

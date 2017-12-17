@@ -1,18 +1,18 @@
 {
   "name": "mat-progress-buttons",
-  "version": "1.0.7",
+  "version": "1.2.1",
   "description": "Material Design Progress Buttons",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/michaeldoye/ng2woo"
+    "url": "https://github.com/michaeldoye/mat-progress-buttons"
   },
   "author": {
     "name": "Michael Doye",
     "email": "michaeldoye@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/michaeldoye/ng2woo/issues"
+    "url": "https://github.com/michaeldoye/mat-progress-buttons/issues"
   },
   "devDependencies": {
     "@angular/core": "^5.0.0",
