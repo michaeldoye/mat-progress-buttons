@@ -1,0 +1,14 @@
+{
+  "name": "mat-progress-buttons",
+  "author": "Michael Doye",
+  "version": "1.0.7",
+  "license": "MIT",
+  "module": "mat-progress-buttons.es5.js",
+  "es2015": "mat-progress-buttons.js",
+  "typings": "mat-progress-buttons.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.1",
+    "rxjs": "^5.3.0",
+    "zone.js": "^0.8.5"
+  }
+}
