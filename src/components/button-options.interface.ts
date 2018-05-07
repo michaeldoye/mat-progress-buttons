@@ -8,4 +8,5 @@ export interface ButtonOpts {
   spinnerSize?: number;
   mode?: string;
   value?: number;
+  full_width?: boolean;
 }
