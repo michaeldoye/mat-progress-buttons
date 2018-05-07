@@ -7,6 +7,7 @@ import { ButtonOpts } from './button-options.interface';
     <button mat-button 
       [color]="options.buttonColor"     
       [class.active]="options.active"
+      [class.full-width]="options.full_width"
       [class.mat-raised-button]="options.raised"
       [disabled]="options.active">
 
@@ -28,6 +29,9 @@ import { ButtonOpts } from './button-options.interface';
     .spinner {
       margin-top: 8px;
       margin-left: 5px;
+    }
+    .full-width {
+      width: 100%;
     }
   `]
 })
