@@ -7,10 +7,12 @@ import { ButtonOpts } from './button-options.interface';
     <button mat-button 
       [color]="options.buttonColor"     
       [class.active]="options.active"
+      [class.fullWidth]="options.fullWidth"
       [class.mat-raised-button]="options.raised"
       [disabled]="options.active">
 
-        <span>{{ options.text }}</span>
+        <span *ngIf="!options.active">{{ options.text }}</span>
+        <span *ngIf="options.active">{{ options.spinnerText }}</span>
 
         <mat-spinner class="spinner" 
           [diameter]="options.spinnerSize"
@@ -23,11 +25,18 @@ import { ButtonOpts } from './button-options.interface';
     </button>
   `,
   styles: [`
-    button /deep/ .mat-button-wrapper {display:flex}
+    button /deep/ .mat-button-wrapper {
+      display:flex; 
+      align-items: center;
+      justify-content: center;
+    }
     button.active {cursor: not-allowed}
     .spinner {
       margin-top: 8px;
       margin-left: 5px;
+    }
+    .fullWidth {
+      width: 100%;
     }
   `]
 })
