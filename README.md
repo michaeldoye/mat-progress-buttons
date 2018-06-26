@@ -96,6 +96,7 @@ spinnerColor?: string, // primary/accent/warn
 raised?: boolean, // raised button
 mode?: string, // determinate/intederminate
 value?: number // used if mode is determinate
+fullWidth?: boolean // button will be full width if true
 ```
 
 ## Development
