@@ -11,8 +11,7 @@ import { ButtonOpts } from './button-options.interface';
       [class.mat-raised-button]="options.raised"
       [disabled]="options.active">
 
-        <span *ngIf="!options.active">{{ options.text }}</span>
-        <span *ngIf="options.active">{{ options.spinnerText }}</span>
+        <span>{{ options.text }}</span>
 
         <mat-spinner class="spinner" 
           [diameter]="options.spinnerSize"
@@ -32,7 +31,7 @@ import { ButtonOpts } from './button-options.interface';
     }
     button.active {cursor: not-allowed}
     .spinner {
-      margin-top: 8px;
+      margin-top: 0px;
       margin-left: 5px;
     }
     .fullWidth {
