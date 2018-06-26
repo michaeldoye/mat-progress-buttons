@@ -106,8 +106,6 @@ run `npm install`
 
 When you are ready to build, run `npm run bundle`
 
-```
-
 
 ## License
 
