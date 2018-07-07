@@ -72,6 +72,7 @@ barColor?: string, // primary/accent/warn
 raised?: boolean, // raised button
 mode?: string, // determinate/intederminate
 value?: number // used if mode is determinate
+disabled?: boolean // button disabled
 ```
 
 ## Progress Spinner Button:
@@ -97,6 +98,7 @@ raised?: boolean, // raised button
 mode?: string, // determinate/intederminate
 value?: number // used if mode is determinate
 fullWidth?: boolean // button will be full width if true
+disabled?: boolean // button disabled
 ```
 
 ## Development

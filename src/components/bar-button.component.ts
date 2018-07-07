@@ -8,7 +8,7 @@ import { ButtonOpts } from './button-options.interface';
       [color]="options.buttonColor" 
       [class.active]="options.active"
       [class.mat-raised-button]="options.raised"
-      [disabled]="options.active">
+      [disabled]="options.active || options.disabled">
 
         <span>{{ options.text }}</span>
 

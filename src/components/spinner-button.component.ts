@@ -9,7 +9,7 @@ import { ButtonOpts } from './button-options.interface';
       [class.active]="options.active"
       [class.fullWidth]="options.fullWidth"
       [class.mat-raised-button]="options.raised"
-      [disabled]="options.active">
+      [disabled]="options.active || options.disabled">
 
         <span>{{ options.text }}</span>
 

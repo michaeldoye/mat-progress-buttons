@@ -10,4 +10,5 @@ export interface ButtonOpts {
   mode?: string;
   value?: number;
   fullWidth?: boolean;
+  disabled?: boolean;
 }
