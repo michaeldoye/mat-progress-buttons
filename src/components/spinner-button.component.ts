@@ -1,10 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 import { ButtonOpts } from './button-options.interface';
 
 @Component({
   selector: 'spinner-button',
   template: `
     <button mat-button 
+      (click)="btnClick($event)"
       [color]="options.buttonColor"     
       [class.active]="options.active"
       [class.fullWidth]="options.fullWidth"
@@ -41,4 +42,8 @@ import { ButtonOpts } from './button-options.interface';
 })
 export class SpinnerButton {
   @Input() options: ButtonOpts;
+  @Output() onClick = new EventEmitter();
+  btnClick(e): void {
+    this.onClick.emit(e);
+  }
 }

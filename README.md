@@ -53,14 +53,23 @@ That's it! Once imported, you can use the components:
 ## Progress Bar Button:
 
 ```html
-<progress-bar-button [options]="options" (click)="someFunc()"></progress-bar-button>
+<progress-bar-button [options]="options" (onClick)="someFunc()"></progress-bar-button>
 
 ```
-API:
+### API:
+
+You can use `(click)` but a custom `onClick` handler is provided as well. Which is useful if using the buttons for forms and you need the buttton to be entirely disabled.
 
 ```json
-@Input() options; // button options (see below)
+@Output() onClick
 ```
+
+Button options (see below)
+
+```json
+@Input() options
+```
+
 
 Options:
 
@@ -78,13 +87,21 @@ disabled?: boolean // button disabled
 ## Progress Spinner Button:
 
 ```html 
-<spinner-button [options]="options" (click)="someFunc()"></spinner-button>
+<spinner-button [options]="options" (onClick)="someFunc()"></spinner-button>
 ```
 
-API:
+### API:
+
+You can use `(click)` but a custom `onClick` handler is provided as well. Which is useful if using the buttons for forms and you need the buttton to be entirely disabled.
 
 ```json
-@Input() options; // button options (see below)
+@Output() onClick
+```
+
+Button options (see below)
+
+```json
+@Input() options
 ```
 
 Options:
