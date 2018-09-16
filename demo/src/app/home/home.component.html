@@ -1,0 +1,38 @@
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 d-flex justify-content-center justify-content-md-end">
+				<img src="assets/logo.svg" alt="mat-progress-buttons logo" class="logo">
+			</div>
+			<div class="col-sm-8 text-center text-md-left">
+				<h1>Mat Progress Buttons</h1>
+				<p>Simple Material Buttons With Progress indicators</p>
+				<p>Scroll down to see it in action!</p>
+				<p class="buttons">
+					<a mat-stroked-button color="primary" href="https://github.com/michaeldoye/mat-progress-buttons" target="_blank"><i class="fa fa-github fa-lg"></i>  Code on Github</a>
+					<a mat-stroked-button color="primary" href="doc/index.html" target="_blank"><i class="fa fa-book fa-lg"></i>  Documentation</a>
+					<a mat-stroked-button color="primary" href="#" (click)="editOnStackBlitz()"><i class="fa fa-bolt fa-lg"></i>  Edit on StackBlitz</a>
+        		</p>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+<section class="home">
+  <div class="container">
+		<!-- put your content here-->
+		<h2>Spinner Button</h2>
+		<hr />
+		<mpb-component (click)="someFunc()" [options]="spinnerButtonOptions"></mpb-component> 
+		<hr />
+
+		<h2>Bar Button</h2>
+		<hr />
+		<mpb-component (click)="someFunc1()" [options]="spinnerButtonOptions1"></mpb-component> 
+		<hr />
+  </div>
+</section>

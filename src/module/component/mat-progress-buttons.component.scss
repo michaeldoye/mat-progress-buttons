@@ -1,0 +1,30 @@
+button /deep/ .mat-button-wrapper {
+  display:flex; 
+  align-items: center;
+  justify-content: center;
+}
+button {
+  outline: none;
+}
+button.active {
+  cursor: not-allowed;
+}
+.spinner {
+  position: absolute;
+  top: 25%;
+  opacity:0;
+  transition: opacity .3s ease-in-out;
+}
+.spinner.active {
+  opacity: 1;
+}
+.button-text {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+span.active {
+  opacity: 0;
+}
+.fullWidth {
+  width: 100%;
+}
