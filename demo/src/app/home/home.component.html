@@ -25,56 +25,51 @@
 <section class="home">
   <div class="container">
 		<!-- put your content here-->
-		<h2>Spinner Button</h2>
+		<h2>Progress Spinner Button</h2>
 		<hr />
 
 		<div class="example-container">
-			<mat-toolbar>Stroked</mat-toolbar>
+			<mat-toolbar>
+				<p class="example-header">
+					<span>Demo</span> <span class="pull-right"><button mat-icon-button><i class="fa fa-bolt fa-lg"></i></button></span>
+				</p>
+			</mat-toolbar>
 			<mat-tab-group mat-stretch-tabs>
-				<mat-tab label="Demo"> 
+				<mat-tab label="Preview"> 
 					<div style="padding: 30px;">
-						<mpb-component (click)="someFunc()" [options]="spinnerButtonOptions"></mpb-component>
+						<mat-spinner-button (click)="someFunc()" [options]="spinnerButtonOptions"></mat-spinner-button>
+						<mat-spinner-button (click)="someFunc1()" [options]="spinnerButtonOptions1"></mat-spinner-button> 
+						<mat-spinner-button (click)="someFunc2()" [options]="spinnerButtonOptions2"></mat-spinner-button>
 					</div> 
 				</mat-tab>
-				<mat-tab label="Code">
-					<div class="code-example" style="padding: 30px;">
-							<code><pre>{{strokedCode}}</pre></code>
+				<mat-tab label="Usage">
+					<div style="padding: 30px;">
+						<p><strong>Template</strong></p>
+						<pre><code highlight [code]="strokedCodeHTML" [language]="html"></code></pre>
+						<p><strong>Class</strong></p>
+						<pre><code highlight [code]="strokedCode" [language]="typescript"></code></pre>
 					</div>
 				</mat-tab>
+				<mat-tab label="Options">content</mat-tab>
 			</mat-tab-group>
 		</div>
 
-
+		<h2>Progress Bar Button</h2>
+		<hr />
 		<div class="example-container">
-			<mat-toolbar>Raised</mat-toolbar>
+			<mat-toolbar>Demo</mat-toolbar>
 			<mat-tab-group mat-stretch-tabs>
-				<mat-tab label="Demo"> 
+				<mat-tab label="Preview"> 
 					<div style="padding: 30px;">
-						<mpb-component (click)="someFunc1()" [options]="spinnerButtonOptions1"></mpb-component> 
+						<mat-spinner-button (click)="someFunc2()" [options]="spinnerButtonOptions2"></mat-spinner-button> 
 					</div> 
 				</mat-tab>
-				<mat-tab label="Code">
-					<div class="code-example" style="padding: 30px;">
-							<code><pre>{{raisedCode}}</pre></code>
-					</div>
-				</mat-tab>
-			</mat-tab-group>
-		</div>
-
-
-		<div class="example-container">
-			<mat-toolbar>Default</mat-toolbar>
-			<mat-tab-group mat-stretch-tabs>
-				<mat-tab label="Demo"> 
-					<div style="padding: 30px;">
-						<mpb-component (click)="someFunc2()" [options]="spinnerButtonOptions2"></mpb-component> 
-					</div> 
-				</mat-tab>
-				<mat-tab label="Code">
+				<mat-tab label="Usage">
 					<div class="code-example" style="padding: 30px;">
 							<code><pre>{{defaultCode}}</pre></code>
 					</div>
 				</mat-tab>
+				<mat-tab label="Options">content</mat-tab>
 			</mat-tab-group>
 		</div>
 

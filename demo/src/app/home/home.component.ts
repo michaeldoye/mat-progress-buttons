@@ -23,15 +23,42 @@ export class HomeComponent implements OnInit {
   };
 
   strokedCode = `
-    <mpb-component (click)="someFunc()" [options]="strokedButtonOpts"></mpb-component>
+  // Button Options
+  strokedBtnOpts = {
+    active: false,
+    text: 'Stroked Button',
+    spinnerSize: 19,
+    raised: false,
+    stroked: true,
+    buttonColor: 'accent',
+    spinnerColor: 'accent',
+    fullWidth: false,
+    disabled: false,
+    mode: 'indeterminate',
+  };
 
-    strokedButtonOptions = {
+  // Click handler
+  btnClick(): void {
+    this.strokedBtnOpts.active = true;
+    setTimeout(() => {
+      this.strokedBtnOpts.active = false;
+    }, 3350);
+  }
+  `;
+
+  strokedCodeHTML = `<mat-spinner-button (click)="btnClick()" [options]="strokedBtnOpts"></mat-spinner-button>`;
+
+
+  raisedCode = `
+    <mpb-component (click)="someFunc()" [options]="raisedButtonOpts"></mpb-component>
+
+    raisedButtonOpts = {
       active: false,
-      text: 'Stroked Button',
+      text: 'Raised Button',
       spinnerSize: 19,
-      raised: false,
-      stroked: true,
-      buttonColor: 'accent',
+      raised: true,
+      stroked: false,
+      buttonColor: 'primary',
       spinnerColor: 'accent',
       fullWidth: false,
       disabled: false,
@@ -39,62 +66,37 @@ export class HomeComponent implements OnInit {
     };
 
     someFunc(): void {
-      this.strokedButtonOpts.active = true;
+      this.raisedButtonOpts.active = true;
       setTimeout(() => {
-        this.strokedButtonOpts.active = false;
+        this.raisedButtonOpts.active = false;
       }, 3350);
     }
-    `;
+  `;
 
 
-    raisedCode = `
-      <mpb-component (click)="someFunc()" [options]="raisedButtonOpts"></mpb-component>
+  defaultCode = `
+    <mpb-component (click)="someFunc()" [options]="defaultButtonOpts"></mpb-component>
 
-      raisedButtonOpts = {
-        active: false,
-        text: 'Raised Button',
-        spinnerSize: 19,
-        raised: true,
-        stroked: false,
-        buttonColor: 'primary',
-        spinnerColor: 'accent',
-        fullWidth: false,
-        disabled: false,
-        mode: 'indeterminate',
-      };
+    defaultButtonOpts = {
+      active: false,
+      text: 'Raised Button',
+      spinnerSize: 19,
+      raised: true,
+      stroked: false,
+      buttonColor: 'primary',
+      spinnerColor: 'accent',
+      fullWidth: false,
+      disabled: false,
+      mode: 'indeterminate',
+    };
 
-      someFunc(): void {
-        this.raisedButtonOpts.active = true;
-        setTimeout(() => {
-          this.raisedButtonOpts.active = false;
-        }, 3350);
-      }
-    `;
-
-
-    defaultCode = `
-      <mpb-component (click)="someFunc()" [options]="defaultButtonOpts"></mpb-component>
-
-      defaultButtonOpts = {
-        active: false,
-        text: 'Raised Button',
-        spinnerSize: 19,
-        raised: true,
-        stroked: false,
-        buttonColor: 'primary',
-        spinnerColor: 'accent',
-        fullWidth: false,
-        disabled: false,
-        mode: 'indeterminate',
-      };
-
-      someFunc(): void {
-        this.defaultButtonOpts.active = true;
-        setTimeout(() => {
-          this.defaultButtonOpts.active = false;
-        }, 3350);
-      }
-    `;
+    someFunc(): void {
+      this.defaultButtonOpts.active = true;
+      setTimeout(() => {
+        this.defaultButtonOpts.active = false;
+      }, 3350);
+    }
+  `;
 
 
   spinnerButtonOptions1 = {
