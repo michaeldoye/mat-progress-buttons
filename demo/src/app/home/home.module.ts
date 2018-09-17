@@ -5,7 +5,7 @@ import { MatProgressButtonsModule } from 'mat-progress-buttons';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatTabsModule, MatToolbarModule } from '@angular/material';
 
 
 @NgModule({
@@ -14,7 +14,9 @@ import { MatButtonModule } from '@angular/material';
         BrowserAnimationsModule,
         MatProgressButtonsModule.forRoot(),
         HomeRoutingModule,
-        MatButtonModule
+        MatButtonModule,
+        MatTabsModule,
+        MatToolbarModule
     ],
     declarations: [HomeComponent],
 })

@@ -27,12 +27,56 @@
 		<!-- put your content here-->
 		<h2>Spinner Button</h2>
 		<hr />
-		<mpb-component (click)="someFunc()" [options]="spinnerButtonOptions"></mpb-component> 
-		<hr />
 
-		<h2>Bar Button</h2>
-		<hr />
-		<mpb-component (click)="someFunc1()" [options]="spinnerButtonOptions1"></mpb-component> 
-		<hr />
+		<div class="example-container">
+			<mat-toolbar>Stroked</mat-toolbar>
+			<mat-tab-group mat-stretch-tabs>
+				<mat-tab label="Demo"> 
+					<div style="padding: 30px;">
+						<mpb-component (click)="someFunc()" [options]="spinnerButtonOptions"></mpb-component>
+					</div> 
+				</mat-tab>
+				<mat-tab label="Code">
+					<div class="code-example" style="padding: 30px;">
+							<code><pre>{{strokedCode}}</pre></code>
+					</div>
+				</mat-tab>
+			</mat-tab-group>
+		</div>
+
+
+		<div class="example-container">
+			<mat-toolbar>Raised</mat-toolbar>
+			<mat-tab-group mat-stretch-tabs>
+				<mat-tab label="Demo"> 
+					<div style="padding: 30px;">
+						<mpb-component (click)="someFunc1()" [options]="spinnerButtonOptions1"></mpb-component> 
+					</div> 
+				</mat-tab>
+				<mat-tab label="Code">
+					<div class="code-example" style="padding: 30px;">
+							<code><pre>{{raisedCode}}</pre></code>
+					</div>
+				</mat-tab>
+			</mat-tab-group>
+		</div>
+
+
+		<div class="example-container">
+			<mat-toolbar>Default</mat-toolbar>
+			<mat-tab-group mat-stretch-tabs>
+				<mat-tab label="Demo"> 
+					<div style="padding: 30px;">
+						<mpb-component (click)="someFunc2()" [options]="spinnerButtonOptions2"></mpb-component> 
+					</div> 
+				</mat-tab>
+				<mat-tab label="Code">
+					<div class="code-example" style="padding: 30px;">
+							<code><pre>{{defaultCode}}</pre></code>
+					</div>
+				</mat-tab>
+			</mat-tab-group>
+		</div>
+
   </div>
 </section>
