@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { MatSpinnerButtonComponent } from './component/spinner-button.component';
+import { MatBarButtonComponent } from './component/bar-button.component';
 import { MatProgressButtonsService } from './service/mat-progress-buttons.service';
 
 import {
@@ -14,6 +15,8 @@ import {
 // Export module's public API
 export { MatSpinnerButtonComponent } from './component/spinner-button.component';
 export { MatProgressButtonsService } from './service/mat-progress-buttons.service';
+export { MatBarButtonComponent } from './component/bar-button.component';
+export { MatProgressButtonOptions } from './mat-progress-buttons.interface';
 
 @NgModule({
   imports: [
@@ -23,8 +26,14 @@ export { MatProgressButtonsService } from './service/mat-progress-buttons.servic
     MatProgressSpinnerModule,
     MatRippleModule
   ],
-  exports: [MatSpinnerButtonComponent],
-  declarations: [MatSpinnerButtonComponent]
+  exports: [
+    MatSpinnerButtonComponent,
+    MatBarButtonComponent
+  ],
+  declarations: [
+    MatSpinnerButtonComponent,
+    MatBarButtonComponent
+  ]
 })
 export class MatProgressButtonsModule {
   static forRoot(): ModuleWithProviders {

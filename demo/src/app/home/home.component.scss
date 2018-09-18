@@ -23,11 +23,15 @@ p.buttons a i {
     margin-bottom: 30px;
 }
 
-mat-spinner-button {
+mat-spinner-button, mat-bar-button {
     margin-right: 25px;
 }
 
 .example-header {
     width: 100%;
     margin-bottom: 0px;
+}
+
+button {
+    outline: none;
 }

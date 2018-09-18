@@ -15,7 +15,6 @@
         		</p>
 			</div>
 		</div>
-
 	</div>
 </div>
 
@@ -31,7 +30,12 @@
 		<div class="example-container">
 			<mat-toolbar>
 				<p class="example-header">
-					<span>Demo</span> <span class="pull-right"><button mat-icon-button><i class="fa fa-bolt fa-lg"></i></button></span>
+					<span>Demo</span> 
+					<span class="pull-right">
+						<a href="https://stackblitz.com/edit/mat-progress-buttons-demo" target="_blank" mat-icon-button matTooltip="Open in StackBlitz">
+							<i class="fa fa-bolt fa-lg"></i>
+						</a>
+					</span>
 				</p>
 			</mat-toolbar>
 			<mat-tab-group mat-stretch-tabs>
@@ -44,32 +48,52 @@
 				</mat-tab>
 				<mat-tab label="Usage">
 					<div style="padding: 30px;">
-						<p><strong>Template</strong></p>
-						<pre><code highlight [code]="strokedCodeHTML" [language]="'html'"></code></pre>
-						<p><strong>Class</strong></p>
-						<pre><code highlight [code]="strokedCode" [language]="'typescript'"></code></pre>
+						<p><strong>Component</strong></p>
+						<pre><code highlight [code]="strokedCode" [language]="['typescript']"></code></pre>
 					</div>
 				</mat-tab>
-				<mat-tab label="Options">content</mat-tab>
+				<mat-tab label="Options">
+					<div style="padding: 30px;">
+						<p><strong>[options]</strong></p>
+						<pre><code highlight [code]="strokedOpts"></code></pre>
+					</div>
+				</mat-tab>
 			</mat-tab-group>
 		</div>
 
 		<h2>Progress Bar Button</h2>
 		<hr />
 		<div class="example-container">
-			<mat-toolbar>Demo</mat-toolbar>
+			<mat-toolbar>
+				<p class="example-header">
+					<span>Demo</span> 
+					<span class="pull-right">
+						<a href="https://stackblitz.com/edit/mat-progress-buttons-demo" target="_blank" mat-icon-button matTooltip="Open in StackBlitz">
+							<i class="fa fa-bolt fa-lg"></i>
+						</a>
+					</span>
+				</p>
+			</mat-toolbar>
 			<mat-tab-group mat-stretch-tabs>
 				<mat-tab label="Preview"> 
 					<div style="padding: 30px;">
-						<mat-spinner-button (click)="someFunc2()" [options]="spinnerButtonOptions2"></mat-spinner-button> 
+						<mat-bar-button (click)="someFunc3()" [options]="barButtonOptions"></mat-bar-button> 
+						<mat-bar-button (click)="someFunc4()" [options]="barButtonOptions1"></mat-bar-button> 
+						<mat-bar-button (click)="someFunc5()" [options]="barButtonOptions2"></mat-bar-button> 
 					</div> 
 				</mat-tab>
 				<mat-tab label="Usage">
-					<div class="code-example" style="padding: 30px;">
-							<code><pre>{{defaultCode}}</pre></code>
+					<div style="padding: 30px;">
+						<p><strong>Component</strong></p>
+						<pre><code highlight [code]="raisedCode" [language]="['typescript']"></code></pre>
 					</div>
 				</mat-tab>
-				<mat-tab label="Options">content</mat-tab>
+				<mat-tab label="Options">
+					<div style="padding: 30px;">
+						<p><strong>[options]</strong></p>
+						<pre><code highlight [code]="raisedOpts"></code></pre>
+					</div>
+				</mat-tab>
 			</mat-tab-group>
 		</div>
 

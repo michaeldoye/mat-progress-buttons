@@ -6,7 +6,7 @@ import { HighlightModule } from 'ngx-highlightjs';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { MatButtonModule, MatTabsModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatTabsModule, MatToolbarModule, MatTooltipModule } from '@angular/material';
 
 
 @NgModule({
@@ -14,11 +14,12 @@ import { MatButtonModule, MatTabsModule, MatToolbarModule } from '@angular/mater
         CommonModule,
         BrowserAnimationsModule,
         MatProgressButtonsModule.forRoot(),
-        HighlightModule.forRoot({theme: 'github-gist'}),
+        HighlightModule.forRoot({theme: 'atelier-cave-light'}),
         HomeRoutingModule,
         MatButtonModule,
         MatTabsModule,
-        MatToolbarModule
+        MatToolbarModule,
+        MatTooltipModule
     ],
     declarations: [HomeComponent],
 })
