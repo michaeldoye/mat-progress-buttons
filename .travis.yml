@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 sudo: required
 dist: trusty
 
@@ -25,3 +26,9 @@ after_success: gulp coveralls
 cache:
   yarn: true
   
+=======
+language: node_js
+sudo: false
+node_js:
+- '6.10.0'
+>>>>>>> e85096014005bb17ae713b348d68a3b672d7fb85
