@@ -1,5 +1,6 @@
 {
   "name": "mat-progress-buttons",
+<<<<<<< HEAD
   "description": "Material Design Progress Buttons",
   "version": "7.0.0-beta.0",
   "homepage": "https://github.com/michaeldoye/mat-progress-buttons",
@@ -121,5 +122,49 @@
       "demo"
     ],
     "scope": "\\S+.*"
+=======
+  "version": "6.0.0",
+  "description": "Material Design Progress Buttons",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaeldoye/mat-progress-buttons"
+  },
+  "author": {
+    "name": "Michael Doye",
+    "email": "michaeldoye@gmail.com"
+  },
+  "scripts": {
+    "bundle": "tsc -p tsconfig-rollup.json && rollup -c && npm run copydts",
+    "copydts": "copyfiles -e \"dist/bundle/**/*\" -u 1 \"dist/**/*.d.ts\" ./dist/bundle/dts"
+  },
+  "bugs": {
+    "url": "https://github.com/michaeldoye/mat-progress-buttons/issues"
+  },
+  "main": "./dist/bundle/index.umd.js",
+  "devDependencies": {
+    "@angular/cdk": "6.3.2",
+    "@angular/cli": "^6.0.8",
+    "@angular/common": "6.0.7",
+    "@angular/compiler": "^6.0.7",
+    "@angular/compiler-cli": "^6.0.7",
+    "@angular/core": "^6.0.7",
+    "@angular/material": "6.3.2",
+    "@angular/platform-browser": "6.0.7",
+    "@angular/platform-browser-dynamic": "6.0.7",
+    "copyfiles": "^2.0.0",
+    "hammerjs": "2.0.8",
+    "rollup": "^0.51.8",
+    "rollup-plugin-uglify": "^4.0.0",
+    "rxjs": "^6.2.1",
+    "typescript": "~2.7.2",
+    "web-animations-js": "2.3.1",
+    "zone.js": "^0.8.26"
+  },
+  "dependencies": {
+    "@angular/animations": "^6.0.7",
+    "@angular/forms": "^6.0.7",
+    "rxjs-compat": "^6.0.0-rc.0"
+>>>>>>> e85096014005bb17ae713b348d68a3b672d7fb85
   }
 }

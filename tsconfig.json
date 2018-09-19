@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
@@ -17,3 +18,15 @@
     ]
   }
 }
+=======
+    "baseUrl": "./src",
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "lib": ["es2015", "dom"],
+    "skipLibCheck": true,
+    // don't auto-discover @types/node, it results in a ///<reference in the .d.ts output
+    "types": []
+  }
+}
+>>>>>>> e85096014005bb17ae713b348d68a3b672d7fb85
