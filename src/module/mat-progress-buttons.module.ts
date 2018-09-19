@@ -3,7 +3,6 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { MatSpinnerButtonComponent } from './component/spinner-button.component';
 import { MatBarButtonComponent } from './component/bar-button.component';
-import { MatProgressButtonsService } from './service/mat-progress-buttons.service';
 
 import {
   MatButtonModule,
@@ -14,7 +13,6 @@ import {
 
 // Export module's public API
 export { MatSpinnerButtonComponent } from './component/spinner-button.component';
-export { MatProgressButtonsService } from './service/mat-progress-buttons.service';
 export { MatBarButtonComponent } from './component/bar-button.component';
 export { MatProgressButtonOptions } from './mat-progress-buttons.interface';
 
@@ -38,8 +36,7 @@ export { MatProgressButtonOptions } from './mat-progress-buttons.interface';
 export class MatProgressButtonsModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: MatProgressButtonsModule,
-      providers: [MatProgressButtonsService]
+      ngModule: MatProgressButtonsModule
     };
   }
 }
