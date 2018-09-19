@@ -1,5 +1,5 @@
-<a name="7.0.3"></a>
-## [7.0.3](https://github.com/michaeldoye/mat-progress-buttons/compare/v6.0.1...v7.0.3) (2018-09-19)
+<a name="7.0.4"></a>
+## [7.0.4](https://github.com/michaeldoye/mat-progress-buttons/compare/v6.0.1...v7.0.4) (2018-09-19)
 
 
 ### Bug Fixes
