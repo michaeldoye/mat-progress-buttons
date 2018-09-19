@@ -1,21 +1,21 @@
 <p align="center">
-  <img height="256px" width="256px" style="text-align: center;" src="https://cdn.rawgit.com/michaeldoye/mat-progress-buttons/master/demo/src/assets/logo.svg">
+  <img height="256px" width="256px" style="text-align: center;" src="https://cdn.rawgit.com/michaeldoye/mat-progress-buttons/new/demo/src/assets/logo.svg">
 </p>
 
-# mat-progress-buttons - Material Design Progress Buttons
+# Anguar Material Design Progress Buttons
 
-[![npm version](https://badge.fury.io/js/mat-progress-buttons.svg)](https://badge.fury.io/js/mat-progress-buttons),
+[![npm version](https://badge.fury.io/js/mat-progress-buttons.svg)](https://badge.fury.io/js/mat-progress-buttons)
 [![Build Status](https://travis-ci.org/michaeldoye/mat-progress-buttons.svg?branch=master)](https://travis-ci.org/michaeldoye/mat-progress-buttons)
-[![Coverage Status](https://coveralls.io/repos/github/michaeldoye/mat-progress-buttons/badge.svg?branch=master)](https://coveralls.io/github/michaeldoye/mat-progress-buttons?branch=master)
 [![dependency Status](https://david-dm.org/michaeldoye/mat-progress-buttons/status.svg)](https://david-dm.org/michaeldoye/mat-progress-buttons)
 [![devDependency Status](https://david-dm.org/michaeldoye/mat-progress-buttons/dev-status.svg?branch=master)](https://david-dm.org/michaeldoye/mat-progress-buttons#info=devDependencies)
 
 ## Demo
 
-View all the directives in action at https://michaeldoye.github.io/mat-progress-buttons
+View all the directives in action at https://mat-progress-buttons.firebaseapp.com
 
 ## Dependencies
 * [Angular](https://angular.io) (*requires* Angular 2 or higher, tested with 2.0.0)
+* [Angular Material](https://material.angular.io/)
 
 ## Installation
 Install above dependencies via *npm*. 
@@ -38,30 +38,30 @@ map: {
 
 Once installed you need to import the main module:
 ```js
-import { LibModule } from 'mat-progress-buttons';
+import { MatProgressButtonsModule } from 'mat-progress-buttons';
 ```
 The only remaining part is to list the imported module in your application module. The exact method will be slightly
-different for the root (top-level) module for which you should end up with the code similar to (notice ` LibModule .forRoot()`):
+different for the root (top-level) module for which you should end up with the code similar to (notice ` MatProgressButtonsModule .forRoot()`):
 ```js
-import { LibModule } from 'mat-progress-buttons';
+import { MatProgressButtonsModule } from 'mat-progress-buttons';
 
 @NgModule({
   declarations: [AppComponent, ...],
-  imports: [LibModule.forRoot(), ...],  
+  imports: [MatProgressButtonsModule.forRoot(), ...],  
   bootstrap: [AppComponent]
 })
 export class AppModule {
 }
 ```
 
-Other modules in your application can simply import ` LibModule `:
+Other modules in your application can simply import ` MatProgressButtonsModule `:
 
 ```js
-import { LibModule } from 'mat-progress-buttons';
+import { MatProgressButtonsModule } from 'mat-progress-buttons';
 
 @NgModule({
   declarations: [OtherComponent, ...],
-  imports: [LibModule, ...], 
+  imports: [MatProgressButtonsModule, ...], 
 })
 export class OtherModule {
 }
@@ -69,7 +69,76 @@ export class OtherModule {
 
 ## Usage
 
+### Spinner Button
 
+```js
+import { Component } from '@angular/core';
+import { MatProgressButtonOptions } from 'mat-progress-buttons';
+
+@Component({
+  selector: 'app-home',
+  template: '<mat-spinner-button (click)="btnClick()" [options]="btnOpts"></mat-spinner-button>'
+})
+export class SomeComponent {
+
+  // Button Options
+  btnOpts: MatProgressButtonOptions = {
+    active: false,
+    text: 'Stroked Button',
+    spinnerSize: 19,
+    raised: false,
+    stroked: true,
+    buttonColor: 'accent',
+    spinnerColor: 'accent',
+    fullWidth: false,
+    disabled: false,
+    mode: 'indeterminate',
+  };
+
+  // Click handler
+  btnClick(): void {
+    this.btnOpts.active = true;
+    setTimeout(() => {
+      this.btnOpts.active = false;
+    }, 3350);
+  }
+};
+```
+
+### Bar Button
+
+```js
+import { Component } from '@angular/core';
+import { MatProgressButtonOptions } from 'mat-progress-buttons';
+
+@Component({
+  selector: 'app-home',
+  template: '<mat-bar-button (click)="btnClick()" [options]="btnOpts"></mat-bar-button>'
+})
+export class SomeComponent {
+
+  // Button Options
+  btnOpts: MatProgressButtonOptions = {
+    active: false,
+    text: 'Stroked Button',
+    buttonColor: 'accent',
+    barColor: 'accent',
+    raised: false,
+    stroked: true,
+    mode: 'indeterminate',
+    value: 0,
+    disabled: false
+  };
+
+  // Click handler
+  btnClick(): void {
+    this.btnOpts.active = true;
+    setTimeout(() => {
+      this.btnOpts.active = false;
+    }, 3350);
+  }
+};
+```
 
 ## License
 
