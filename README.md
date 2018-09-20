@@ -13,6 +13,8 @@
 
 View all the directives in action at https://mat-progress-buttons.firebaseapp.com
 
+StackBlitz demo https://stackblitz.com/edit/mat-progress-buttons-demo
+
 ## Dependencies
 * [Angular](https://angular.io) (*requires* Angular 2 or higher, tested with 2.0.0)
 * [Angular Material](https://material.angular.io/)
