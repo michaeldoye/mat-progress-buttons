@@ -142,6 +142,55 @@ export class SomeComponent {
 };
 ```
 
+<a name="run-demo-app-locally"/>
+
+## Run Demo App Locally
+
+- [clone this repo](https://github.com/michaeldoye/mat-progress-buttons.git) by running
+```bash
+$ git clone https://github.com/michaeldoye/mat-progress-buttons.git
+```
+
+- link the **mat-progress-buttons** package
+
+```bash
+$ gulp link
+```
+
+- navigate to the demo app directory
+```bash
+$ cd demo
+```
+
+- install the dependencies
+```bash
+$ npm i
+```
+
+- run/start/serve the app
+```bash
+$ npm run start
+```
+or
+```bash
+$ ng serve --open
+```
+- the app is now hosted by `http://localhost:4200/`
+
+
+<a name="development"/>
+
+## Development
+
+1. clone this [repo](https://github.com/michaeldoye/mat-progress-buttons.git)
+2. Install the dependencies by running `npm i`
+3. build the library `npm run build` or `gulp build`
+4. Link the library `gulp link`
+ 5. Navigate to the demo app's directory
+  - `cd demo`
+  _ `npm i`
+  _ `npm start`
+
 ## License
 
 Copyright (c) 2018 Michael Doye. Licensed under the MIT License (MIT)
