@@ -9,7 +9,7 @@ import sdk from '@stackblitz/sdk';
 })
 export class HomeComponent implements OnInit {
 
-  strokedCode = 
+  strokedCode =
   `  import { Component } from '@angular/core';
   import { MatProgressButtonOptions } from 'mat-progress-buttons';
 
@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
       disabled: false,
       mode: 'indeterminate',
     };
-  
+
     // Click handler
     btnClick(): void {
       this.btnOpts.active = true;
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
   }`;
 
 
-  strokedOpts = 
+  strokedOpts =
   `    active: boolean,
     text: string,
     spinnerSize: number,
@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
       value: 0,
       disabled: false
     };
-  
+
     // Click handler
     btnClick(): void {
       this.btnOpts.active = true;
@@ -88,7 +88,7 @@ export class HomeComponent implements OnInit {
   }`;
 
 
-  raisedOpts = 
+  raisedOpts =
   `    active: boolean,
     text: string,
     raised: boolean,
@@ -148,8 +148,8 @@ export class HomeComponent implements OnInit {
     mode: 'indeterminate',
     value: 0,
     disabled: false
-  } 
-  
+  };
+
   barButtonOptions1 = {
     active: false,
     text: 'Raised Button',
@@ -160,7 +160,7 @@ export class HomeComponent implements OnInit {
     mode: 'indeterminate',
     value: 0,
     disabled: false
-  }   
+  };
 
 
   barButtonOptions2 = {
@@ -173,7 +173,7 @@ export class HomeComponent implements OnInit {
     mode: 'indeterminate',
     value: 0,
     disabled: false
-  }   
+  };
 
   constructor(private titleService: Title) { }
 
@@ -211,19 +211,19 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       this.barButtonOptions.active = false;
     }, 3350);
-  }  
+  }
 
   someFunc4(): void {
     this.barButtonOptions1.active = true;
     setTimeout(() => {
       this.barButtonOptions1.active = false;
     }, 3350);
-  }  
-  
+  }
+
   someFunc5(): void {
     this.barButtonOptions2.active = true;
     setTimeout(() => {
       this.barButtonOptions2.active = false;
     }, 3350);
-  }   
+  }
 }
