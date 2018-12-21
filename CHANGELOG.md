@@ -1,3 +1,8 @@
+<a name="7.0.7"></a>
+## [7.0.7](https://github.com/michaeldoye/mat-progress-buttons/compare/v7.0.5...v7.0.7) (2018-12-21)
+
+
+
 <a name="7.0.5"></a>
 ## [7.0.5](https://github.com/michaeldoye/mat-progress-buttons/compare/v7.0.4...v7.0.5) (2018-09-19)
 
