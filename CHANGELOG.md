@@ -1,3 +1,19 @@
+<a name="7.1.1"></a>
+## [7.1.1](https://github.com/michaeldoye/mat-progress-buttons/compare/v7.0.10...v7.1.1) (2019-02-28)
+
+
+### Bug Fixes
+
+* **demo:** updated spinner size and added missing method ([b5b20bd](https://github.com/michaeldoye/mat-progress-buttons/commit/b5b20bd))
+
+
+### Features
+
+* **lib:** mat fab button ([9efcfa7](https://github.com/michaeldoye/mat-progress-buttons/commit/9efcfa7))
+* **lib:** mat flat button ([4443be4](https://github.com/michaeldoye/mat-progress-buttons/commit/4443be4))
+
+
+
 <a name="7.0.10"></a>
 ## [7.0.10](https://github.com/michaeldoye/mat-progress-buttons/compare/v7.0.5...v7.0.10) (2018-12-21)
 
