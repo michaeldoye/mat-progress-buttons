@@ -90,6 +90,8 @@ export class SomeComponent {
     spinnerSize: 19,
     raised: false,
     stroked: true,
+    flat: false,
+    fab: false,
     buttonColor: 'accent',
     spinnerColor: 'accent',
     fullWidth: false,
@@ -127,6 +129,7 @@ export class SomeComponent {
     barColor: 'accent',
     raised: false,
     stroked: true,
+    flat: false,
     mode: 'indeterminate',
     value: 0,
     disabled: false
@@ -141,6 +144,8 @@ export class SomeComponent {
   }
 };
 ```
+
+**Note**: Bar Button does not suppor the `fab` style, currently. Hope to have something like [this](https://codepen.io/DevVersion/pen/vGebGB) soon.
 
 <a name="run-demo-app-locally"/>
 
@@ -194,4 +199,3 @@ $ ng serve --open
 ## License
 
 Copyright (c) 2018 Michael Doye. Licensed under the MIT License (MIT)
-

@@ -1,20 +1,22 @@
-<button mat-button 
-  [color]="options.buttonColor"     
+<button mat-button
+  [color]="options.buttonColor"
   [class.active]="options.active"
   [class.fullWidth]="options.fullWidth"
   [class.mat-raised-button]="options.raised"
   [class.mat-stroked-button]="options.stroked"
+  [class.mat-flat-button]="options.flat"
+  [class.mat-fab]="options.fab"
   [disabled]="options.disabled">
 
   <span
-    class="button-text" 
+    class="button-text"
     [class.active]="options.active">
     {{ options.text }}
   </span>
 
-  <mat-spinner class="spinner" 
+  <mat-spinner class="spinner"
     [diameter]="options.spinnerSize"
-    [color]="options.spinnerColor" 
+    [color]="options.spinnerColor"
     [mode]="options.mode"
     [value]="options.value"
     [class.active]="options.active">
