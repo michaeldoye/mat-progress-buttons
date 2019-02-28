@@ -150,10 +150,10 @@ export class HomeComponent implements OnInit {
   spinnerButtonOptions4 = {
     active: false,
     text: 'Fab',
-    spinnerSize: 19,
+    spinnerSize: 30,
     raised: false,
     stroked: false,
-    flat: true,
+    flat: false,
     fab: true,
     buttonColor: 'primary',
     spinnerColor: 'accent',
@@ -274,6 +274,13 @@ export class HomeComponent implements OnInit {
     this.barButtonOptions3.active = true;
     setTimeout(() => {
       this.barButtonOptions3.active = false;
+    }, 3350);
+  }
+
+  someFunc8(): void {
+    this.spinnerButtonOptions4.active = true;
+    setTimeout(() => {
+      this.spinnerButtonOptions4.active = false;
     }, 3350);
   }
 }

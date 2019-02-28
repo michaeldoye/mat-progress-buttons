@@ -199,4 +199,3 @@ $ ng serve --open
 ## License
 
 Copyright (c) 2018 Michael Doye. Licensed under the MIT License (MIT)
-
