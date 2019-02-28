@@ -145,6 +145,8 @@ export class SomeComponent {
 };
 ```
 
+**Note**: Bar Button does not suppor the `fab` style, currently. Hope to have something like [this](https://codepen.io/DevVersion/pen/vGebGB) soon.
+
 <a name="run-demo-app-locally"/>
 
 ## Run Demo App Locally
