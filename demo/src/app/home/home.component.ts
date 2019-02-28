@@ -147,6 +147,21 @@ export class HomeComponent implements OnInit {
     mode: 'indeterminate'
   };
 
+  spinnerButtonOptions4 = {
+    active: false,
+    text: 'Fab',
+    spinnerSize: 19,
+    raised: false,
+    stroked: false,
+    flat: true,
+    fab: true,
+    buttonColor: 'primary',
+    spinnerColor: 'accent',
+    fullWidth: false,
+    disabled: false,
+    mode: 'indeterminate'
+  };
+
   barButtonOptions = {
     active: false,
     text: 'Stroked Button',
@@ -191,6 +206,20 @@ export class HomeComponent implements OnInit {
     raised: false,
     stroked: false,
     flat: true,
+    mode: 'indeterminate',
+    value: 0,
+    disabled: false
+  };
+
+  barButtonOptions4 = {
+    active: false,
+    text: 'Fab',
+    buttonColor: 'primary',
+    barColor: 'primary',
+    raised: false,
+    stroked: false,
+    flat: false,
+    fab: true,
     mode: 'indeterminate',
     value: 0,
     disabled: false
@@ -259,6 +288,13 @@ export class HomeComponent implements OnInit {
     this.barButtonOptions3.active = true;
     setTimeout(() => {
       this.barButtonOptions3.active = false;
+    }, 3350);
+  }
+
+  someFunc8(): void {
+    this.barButtonOptions4.active = true;
+    setTimeout(() => {
+      this.barButtonOptions4.active = false;
     }, 3350);
   }
 }

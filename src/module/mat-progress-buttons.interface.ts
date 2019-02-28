@@ -8,6 +8,7 @@ export interface MatProgressButtonOptions {
   raised?: boolean;
   stroked?: boolean;
   flat?: boolean;
+  fab?: boolean;
   spinnerSize?: number;
   mode?: string;
   value?: number;

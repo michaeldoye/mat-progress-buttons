@@ -90,6 +90,8 @@ export class SomeComponent {
     spinnerSize: 19,
     raised: false,
     stroked: true,
+    flat: false,
+    fab: false,
     buttonColor: 'accent',
     spinnerColor: 'accent',
     fullWidth: false,
@@ -127,6 +129,7 @@ export class SomeComponent {
     barColor: 'accent',
     raised: false,
     stroked: true,
+    flat: false,
     mode: 'indeterminate',
     value: 0,
     disabled: false
