@@ -211,20 +211,6 @@ export class HomeComponent implements OnInit {
     disabled: false
   };
 
-  barButtonOptions4 = {
-    active: false,
-    text: 'Fab',
-    buttonColor: 'primary',
-    barColor: 'primary',
-    raised: false,
-    stroked: false,
-    flat: false,
-    fab: true,
-    mode: 'indeterminate',
-    value: 0,
-    disabled: false
-  };
-
   constructor(private titleService: Title) {}
 
   ngOnInit() {
@@ -288,13 +274,6 @@ export class HomeComponent implements OnInit {
     this.barButtonOptions3.active = true;
     setTimeout(() => {
       this.barButtonOptions3.active = false;
-    }, 3350);
-  }
-
-  someFunc8(): void {
-    this.barButtonOptions4.active = true;
-    setTimeout(() => {
-      this.barButtonOptions4.active = false;
     }, 3350);
   }
 }
