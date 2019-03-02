@@ -1,8 +1,12 @@
-button.active {
-  cursor: not-allowed;
-}
-.bar {
-  position:absolute;
-  top: 0px;
-  left: 0px;
+:host {
+  button {
+    &.active {
+      cursor: not-allowed;
+    }
+    .bar {
+      position:absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
 }

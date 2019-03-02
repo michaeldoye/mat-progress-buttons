@@ -6,7 +6,6 @@
 @import '~highlight.js/styles/github.css';
 
 .jumbotron {
-    //margin-top: 3.4rem;
     margin-bottom: 0rem;
     h1 {
         font-size: 2.5rem;
@@ -16,7 +15,7 @@
         font-size: 1.2rem;
     }
 
-    .btn{
+    .btn {
         margin: .5rem;
     }
 
@@ -28,7 +27,6 @@
 
 @include media-breakpoint-up(sm) {
     .jumbotron {
-       // margin-top: 3.4rem;
         margin-bottom: 0rem;
         h1 {
             font-size: 3.6rem;
