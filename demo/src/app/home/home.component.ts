@@ -150,7 +150,7 @@ export class HomeComponent implements OnInit {
   spinnerButtonOptions4 = {
     active: false,
     text: 'Fab',
-    spinnerSize: 30,
+    spinnerSize: 19,
     raised: false,
     stroked: false,
     flat: false,

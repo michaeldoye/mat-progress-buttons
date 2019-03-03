@@ -10,12 +10,12 @@
 
   <span
     class="button-text"
-    [class.active]="options.active">
-    {{ options.text }}
+    [class.active]="options.active && !options.fab">
+      {{ options.text }}
   </span>
-
+  
   <mat-spinner class="spinner"
-    [diameter]="options.spinnerSize"
+    [diameter]="options.fab ? '58' : options.spinnerSize"
     [color]="options.spinnerColor"
     [mode]="options.mode"
     [value]="options.value"

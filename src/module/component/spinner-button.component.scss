@@ -12,6 +12,11 @@
     &.fullWidth {
       width: 100%;
     }
+    &.mat-fab {
+      .spinner {
+        margin-top: -15px;
+      }
+    }
     .spinner {
       position: absolute;
       top: 25%;
