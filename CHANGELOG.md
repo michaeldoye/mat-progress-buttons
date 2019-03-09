@@ -1,3 +1,19 @@
+<a name="7.1.2"></a>
+## [7.1.2](https://github.com/michaeldoye/mat-progress-buttons/compare/v7.1.1...v7.1.2) (2019-03-09)
+
+
+### Bug Fixes
+
+* **lib:** improve comp styles ([9b70605](https://github.com/michaeldoye/mat-progress-buttons/commit/9b70605))
+
+
+### Features
+
+* **lib:** added icon support for fab ([7346207](https://github.com/michaeldoye/mat-progress-buttons/commit/7346207))
+* **lib:** static spinner size for fab spinner ([593cfbc](https://github.com/michaeldoye/mat-progress-buttons/commit/593cfbc))
+
+
+
 <a name="7.1.1"></a>
 ## [7.1.1](https://github.com/michaeldoye/mat-progress-buttons/compare/v7.0.10...v7.1.1) (2019-02-28)
 
