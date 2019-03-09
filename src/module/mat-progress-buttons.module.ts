@@ -9,6 +9,7 @@ import {
   MatProgressBarModule,
   MatProgressSpinnerModule,
   MatRippleModule,
+  MatIconModule,
 } from '@angular/material';
 
 // Export module's public API
@@ -22,7 +23,8 @@ export { MatProgressButtonOptions } from './mat-progress-buttons.interface';
     MatButtonModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
-    MatRippleModule
+    MatRippleModule,
+    MatIconModule
   ],
   exports: [
     MatSpinnerButtonComponent,

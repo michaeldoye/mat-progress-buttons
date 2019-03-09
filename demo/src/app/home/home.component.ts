@@ -144,7 +144,7 @@ export class HomeComponent implements OnInit {
     spinnerColor: 'accent',
     fullWidth: false,
     disabled: false,
-    mode: 'indeterminate'
+    mode: 'indeterminate',
   };
 
   spinnerButtonOptions4 = {
@@ -159,7 +159,8 @@ export class HomeComponent implements OnInit {
     spinnerColor: 'accent',
     fullWidth: false,
     disabled: false,
-    mode: 'indeterminate'
+    mode: 'indeterminate',
+    icon: 'home',
   };
 
   barButtonOptions = {
