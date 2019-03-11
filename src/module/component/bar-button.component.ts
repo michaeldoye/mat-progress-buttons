@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter, HostListener } from '@angular/core';
 import { MatProgressButtonOptions } from '../mat-progress-buttons.interface';
 
 @Component({
@@ -9,4 +9,10 @@ import { MatProgressButtonOptions } from '../mat-progress-buttons.interface';
 })
 export class MatBarButtonComponent {
   @Input() options: MatProgressButtonOptions;
+  @Output() btnClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
+  @HostListener('click', ['$event'])
+  public onClick(event: MouseEvent) {
+    // tslint:disable-next-line: no-unused-expression
+    return !this.options.disabled && this.btnClick.emit(event);
+  }
 }

@@ -12,11 +12,11 @@
   <span
     class="button-text"
     *ngIf="!options.fab"
-    [class.active]="options.active">
+    [class.active]="options.active && !options.disabled">
       {{ options.text }}
   </span>
 
-  <ng-container 
+  <ng-container
     *ngIf="options.fab && options.icon">
     <mat-icon>{{ options.icon }}</mat-icon>
   </ng-container>
@@ -26,6 +26,6 @@
     [color]="options.spinnerColor"
     [mode]="options.mode"
     [value]="options.value"
-    [class.active]="options.active">
+    [class.active]="options.active && !options.disabled">
   </mat-spinner>
 </button>
