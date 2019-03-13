@@ -117,7 +117,7 @@ import { MatProgressButtonOptions } from 'mat-progress-buttons';
 
 @Component({
   selector: 'app-home',
-  template: '<mat-bar-button (click)="btnClick()" [options]="btnOpts"></mat-bar-button>'
+  template: '<mat-bar-button (btnClick)="btnClick()" [options]="btnOpts"></mat-bar-button>'
 })
 export class SomeComponent {
 

@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
 
   @Component({
     selector: 'app-home',
-    template: '<mat-spinner-button (click)="btnClick()" [options]="btnOpts"></mat-spinner-button>'
+    template: '<mat-spinner-button (btnClick)="btnClick()" [options]="btnOpts"></mat-spinner-button>'
   })
   export class SomeComponent {
 
@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
 
   @Component({
     selector: 'app-home',
-    template: '<mat-bar-button (click)="btnClick()" [options]="btnOpts"></mat-bar-button>'
+    template: '<mat-bar-button (btnClick)="btnClick()" [options]="btnOpts"></mat-bar-button>'
   })
   export class SomeComponent {
 
