@@ -79,7 +79,7 @@ import { MatProgressButtonOptions } from 'mat-progress-buttons';
 
 @Component({
   selector: 'app-home',
-  template: '<mat-spinner-button (click)="btnClick()" [options]="btnOpts"></mat-spinner-button>'
+  template: '<mat-spinner-button (btnClick)="btnClick()" [options]="btnOpts"></mat-spinner-button>'
 })
 export class SomeComponent {
 
