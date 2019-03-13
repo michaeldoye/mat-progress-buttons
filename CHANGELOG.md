@@ -1,3 +1,8 @@
+<a name="8.0.2"></a>
+## [8.0.2](https://github.com/michaeldoye/mat-progress-buttons/compare/v8.0.1...v8.0.2) (2019-03-13)
+
+
+
 <a name="8.0.1"></a>
 ## [8.0.1](https://github.com/michaeldoye/mat-progress-buttons/compare/v7.1.2...v8.0.1) (2019-03-13)
 
