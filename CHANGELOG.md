@@ -1,3 +1,18 @@
+<a name="8.0.1"></a>
+## [8.0.1](https://github.com/michaeldoye/mat-progress-buttons/compare/v7.1.2...v8.0.1) (2019-03-13)
+
+
+### Bug Fixes
+
+* **lib:** prevent bubbling of disabled button ([b8ec4b3](https://github.com/michaeldoye/mat-progress-buttons/commit/b8ec4b3)), closes [#23](https://github.com/michaeldoye/mat-progress-buttons/issues/23)
+
+
+### BREAKING CHANGES
+
+* **lib:** Event hanlder renamed to from (click) to (btnClick)
+
+
+
 <a name="7.1.2"></a>
 ## [7.1.2](https://github.com/michaeldoye/mat-progress-buttons/compare/v7.1.1...v7.1.2) (2019-03-09)
 
