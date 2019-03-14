@@ -160,7 +160,7 @@ export class HomeComponent implements OnInit {
     fullWidth: false,
     disabled: false,
     mode: 'indeterminate',
-    icon: 'home',
+    icon: 'favorite',
   };
 
   barButtonOptions = {

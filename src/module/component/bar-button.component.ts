@@ -12,7 +12,8 @@ export class MatBarButtonComponent {
   @Output() btnClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
   @HostListener('click', ['$event'])
   public onClick(event: MouseEvent) {
-    // tslint:disable-next-line: no-unused-expression
-    return !this.options.disabled && this.btnClick.emit(event);
+    if (!this.options.disabled && !this.options.active) {
+      this.btnClick.emit(event);
+    }
   }
 }
