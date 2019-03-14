@@ -1,3 +1,13 @@
+<a name="8.0.3"></a>
+## [8.0.3](https://github.com/michaeldoye/mat-progress-buttons/compare/v8.0.2...v8.0.3) (2019-03-14)
+
+
+### Bug Fixes
+
+* **lib:** prevent bubling when active ([7be3008](https://github.com/michaeldoye/mat-progress-buttons/commit/7be3008))
+
+
+
 <a name="8.0.2"></a>
 ## [8.0.2](https://github.com/michaeldoye/mat-progress-buttons/compare/v8.0.1...v8.0.2) (2019-03-13)
 
