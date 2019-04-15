@@ -3,6 +3,9 @@
     &.active {
       cursor: not-allowed;
     }
+    &.fullWidth {
+      width: 100%;
+    }
     .bar {
       position:absolute;
       top: 0px;

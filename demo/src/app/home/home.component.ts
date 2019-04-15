@@ -94,7 +94,7 @@ export class HomeComponent implements OnInit {
     disabled: boolean,
     mode: string`;
 
-  spinnerButtonOptions = {
+  spinnerButtonOptions: MatProgressButtonOptions = {
     active: false,
     text: 'Stroked Button',
     spinnerSize: 19,
@@ -107,7 +107,7 @@ export class HomeComponent implements OnInit {
     mode: 'indeterminate'
   };
 
-  spinnerButtonOptions1 = {
+  spinnerButtonOptions1: MatProgressButtonOptions = {
     active: false,
     text: 'Raised Button',
     spinnerSize: 19,
@@ -120,7 +120,7 @@ export class HomeComponent implements OnInit {
     mode: 'indeterminate'
   };
 
-  spinnerButtonOptions2 = {
+  spinnerButtonOptions2: MatProgressButtonOptions = {
     active: false,
     text: 'Default Button',
     spinnerSize: 19,
@@ -133,7 +133,7 @@ export class HomeComponent implements OnInit {
     mode: 'indeterminate'
   };
 
-  spinnerButtonOptions3 = {
+  spinnerButtonOptions3: MatProgressButtonOptions = {
     active: false,
     text: 'Flat Button',
     spinnerSize: 19,
@@ -147,7 +147,7 @@ export class HomeComponent implements OnInit {
     mode: 'indeterminate',
   };
 
-  spinnerButtonOptions4 = {
+  spinnerButtonOptions4: MatProgressButtonOptions = {
     active: false,
     text: 'Fab',
     spinnerSize: 19,
@@ -163,7 +163,7 @@ export class HomeComponent implements OnInit {
     icon: 'favorite',
   };
 
-  barButtonOptions = {
+  barButtonOptions: MatProgressButtonOptions = {
     active: false,
     text: 'Stroked Button',
     buttonColor: 'accent',
@@ -175,7 +175,7 @@ export class HomeComponent implements OnInit {
     disabled: false
   };
 
-  barButtonOptions1 = {
+  barButtonOptions1: MatProgressButtonOptions = {
     active: false,
     text: 'Raised Button',
     buttonColor: 'primary',
@@ -187,7 +187,7 @@ export class HomeComponent implements OnInit {
     disabled: false
   };
 
-  barButtonOptions2 = {
+  barButtonOptions2: MatProgressButtonOptions = {
     active: false,
     text: 'Default Button',
     buttonColor: 'primary',
@@ -199,7 +199,7 @@ export class HomeComponent implements OnInit {
     disabled: false
   };
 
-  barButtonOptions3 = {
+  barButtonOptions3: MatProgressButtonOptions = {
     active: false,
     text: 'Flat Button',
     buttonColor: 'primary',
