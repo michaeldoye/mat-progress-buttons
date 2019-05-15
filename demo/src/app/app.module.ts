@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppSharedModule } from './shared/shared.module';
+import { AppSharedModule } from './shared';
 import { HomeModule } from './home/home.module';
 import { AppComponent } from './app.component';
 

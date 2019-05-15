@@ -2,7 +2,7 @@ import {ProgressSpinnerMode, ThemePalette} from '@angular/material';
 
 export interface MatProgressButtonOptions {
   active: boolean;
-  text: string;
+  text?: string;
   spinnerText?: string;
   buttonColor?: ThemePalette;
   spinnerColor?: ThemePalette;

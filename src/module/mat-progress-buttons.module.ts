@@ -11,6 +11,7 @@ import {
   MatRippleModule,
   MatIconModule,
 } from '@angular/material';
+import {MatProgressButtonOptions} from './mat-progress-buttons.interface';
 
 // Export module's public API
 export { MatSpinnerButtonComponent } from './component/spinner-button.component';
@@ -36,9 +37,10 @@ export { MatProgressButtonOptions } from './mat-progress-buttons.interface';
   ]
 })
 export class MatProgressButtonsModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(defaultOpts?: MatProgressButtonOptions): ModuleWithProviders {
     return {
-      ngModule: MatProgressButtonsModule
+      ngModule: MatProgressButtonsModule,
+      providers: [{provide: 'defaultOptions', useValue: defaultOpts}]
     };
   }
 }

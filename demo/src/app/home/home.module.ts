@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatProgressButtonsModule } from 'mat-progress-buttons';
+import {MatProgressButtonOptions, MatProgressButtonsModule} from 'mat-progress-buttons';
 import { HighlightModule } from 'ngx-highlightjs';
 import typescript from 'highlight.js/lib/languages/typescript';
 
@@ -14,11 +14,25 @@ export function hljsLanguages() {
       {name: 'typescript', func: typescript},
     ];
   }
+
+  const defaultOpts: MatProgressButtonOptions = {
+    active: false,
+    text: 'Stroked Button',
+    spinnerSize: 19,
+    raised: false,
+    stroked: true,
+    buttonColor: 'accent',
+    spinnerColor: 'accent',
+    fullWidth: false,
+    disabled: false,
+    mode: 'indeterminate'
+  };
+
 @NgModule({
     imports: [
         CommonModule,
         BrowserAnimationsModule,
-        MatProgressButtonsModule.forRoot(),
+        MatProgressButtonsModule.forRoot(defaultOpts),
         HighlightModule.forRoot({languages: hljsLanguages}),
         HomeRoutingModule,
         MatButtonModule,
