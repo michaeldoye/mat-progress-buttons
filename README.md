@@ -56,6 +56,11 @@ export class AppModule {
 }
 ```
 
+#### Global options
+You can optionally provide global options via `forRoot()`.
+
+[TODO]
+
 Other modules in your application can simply import ` MatProgressButtonsModule `:
 
 ```js

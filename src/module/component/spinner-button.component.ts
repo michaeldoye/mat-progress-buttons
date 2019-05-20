@@ -1,4 +1,4 @@
-import {Component, Input, Output, HostListener, EventEmitter, OnInit, Inject} from '@angular/core';
+import { Component, Input, Output, HostListener, EventEmitter, OnInit, Inject } from '@angular/core';
 import { MatProgressButtonOptions } from '../mat-progress-buttons.interface';
 
 @Component({
@@ -9,7 +9,7 @@ import { MatProgressButtonOptions } from '../mat-progress-buttons.interface';
 })
 export class MatSpinnerButtonComponent implements OnInit {
   public buttonOptions: MatProgressButtonOptions;
-  private _options: MatProgressButtonOptions;
+  private _options: any;
 
   @Input() set options(value: MatProgressButtonOptions) {
     this._options = value;
@@ -18,16 +18,17 @@ export class MatSpinnerButtonComponent implements OnInit {
 
   @HostListener('click', ['$event'])
   public onClick(event: MouseEvent) {
+    this.buttonOptions = Object.assign(this._options, this.opts);
     if (!this.buttonOptions.disabled && !this.buttonOptions.active) {
       this.btnClick.emit(event);
     }
   }
 
   constructor(@Inject('defaultOptions') private opts: MatProgressButtonOptions) {
-    this.buttonOptions = this._options ? this._options : this.opts;
+    this._options = {};
   }
 
   ngOnInit(): void {
-    console.log(this.buttonOptions);
+    this.buttonOptions = Object.assign(this.opts, this._options);
   }
 }
