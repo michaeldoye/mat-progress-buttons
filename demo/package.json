@@ -75,6 +75,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "lodash": "4.17.11",
+    "prettier": "^1.17.1",
     "protractor": "~5.4.1",
     "reflect-metadata": "~0.1.10",
     "run-sequence": "2.2.1",

@@ -1,4 +1,5 @@
-<button mat-button
+<button
+  mat-button
   [type]="buttonOptions.type"
   [color]="buttonOptions.buttonColor"
   [class.active]="buttonOptions.active"
@@ -7,25 +8,27 @@
   [class.mat-stroked-button]="buttonOptions.stroked"
   [class.mat-flat-button]="buttonOptions.flat"
   [class.mat-fab]="buttonOptions.fab"
-  [disabled]="buttonOptions.disabled">
-
+  [disabled]="buttonOptions.disabled"
+>
   <span
     class="button-text"
     *ngIf="!buttonOptions.fab"
-    [class.active]="buttonOptions.active && !buttonOptions.disabled">
-      {{ buttonOptions.text }}
+    [class.active]="buttonOptions.active && !buttonOptions.disabled"
+  >
+    {{ buttonOptions.text }}
   </span>
 
-  <ng-container
-    *ngIf="buttonOptions.fab && buttonOptions.icon">
+  <ng-container *ngIf="buttonOptions.fab && buttonOptions.icon">
     <mat-icon>{{ buttonOptions.icon }}</mat-icon>
   </ng-container>
 
-  <mat-spinner class="spinner"
+  <mat-spinner
+    class="spinner"
     [diameter]="buttonOptions.fab ? 58 : buttonOptions.spinnerSize"
     [color]="buttonOptions.spinnerColor"
     [mode]="buttonOptions.mode"
     [value]="buttonOptions.value"
-    [class.active]="buttonOptions.active && !buttonOptions.disabled">
+    [class.active]="buttonOptions.active && !buttonOptions.disabled"
+  >
   </mat-spinner>
 </button>

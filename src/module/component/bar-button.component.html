@@ -1,4 +1,5 @@
-<button mat-button
+<button
+  mat-button
   [type]="options.type"
   [color]="options.buttonColor"
   [class.active]="options.active"
@@ -6,8 +7,8 @@
   [class.mat-stroked-button]="options.stroked"
   [class.mat-flat-button]="options.flat"
   [class.fullWidth]="options.fullWidth"
-  [disabled]="options.active || options.disabled">
-
+  [disabled]="options.active || options.disabled"
+>
   <span>{{ options.text }}</span>
 
   <mat-progress-bar
@@ -15,6 +16,7 @@
     *ngIf="options.active && !options.disabled"
     [color]="options.barColor"
     [mode]="options.mode"
-    [value]="options.value">
+    [value]="options.value"
+  >
   </mat-progress-bar>
 </button>

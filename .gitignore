@@ -33,6 +33,9 @@ yarn-error.log
 testem.log
 /typings
 /config/gulp-tasks/README.md
+.firebase/*
+/demo/.firebase/*
+demo/.firebase/*
 
 # e2e
 /e2e/*.js

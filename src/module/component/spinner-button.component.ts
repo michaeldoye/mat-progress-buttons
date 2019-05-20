@@ -1,4 +1,12 @@
-import { Component, Input, Output, HostListener, EventEmitter, OnInit, Inject } from '@angular/core';
+import {
+  Component,
+  Input,
+  Output,
+  HostListener,
+  EventEmitter,
+  OnInit,
+  Inject
+} from '@angular/core';
 import { MatProgressButtonOptions } from '../mat-progress-buttons.interface';
 
 @Component({
@@ -13,7 +21,7 @@ export class MatSpinnerButtonComponent implements OnInit {
 
   @Input() set options(value: MatProgressButtonOptions) {
     this._options = value;
-  };
+  }
   @Output() btnClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
 
   @HostListener('click', ['$event'])

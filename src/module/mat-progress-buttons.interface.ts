@@ -19,7 +19,3 @@ export interface MatProgressButtonOptions {
   icon?: string;
   type?: string;
 }
-
-export type MatProgressButtonOptionsPartial<T> = {
-  [P in keyof T]?: T[P];
-}
