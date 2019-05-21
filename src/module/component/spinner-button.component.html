@@ -8,7 +8,8 @@
   [class.mat-stroked-button]="buttonOptions.stroked"
   [class.mat-flat-button]="buttonOptions.flat"
   [class.mat-fab]="buttonOptions.fab"
-  [disabled]="buttonOptions.disabled"
+  [disabled]="buttonOptions.active || buttonOptions.disabled"
+  [disableRipple]="buttonOptions.disableRipple"
 >
   <span
     class="button-text"

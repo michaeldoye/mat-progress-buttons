@@ -1,104 +1,151 @@
 <div class="jumbotron jumbotron-fluid">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4 d-flex justify-content-center justify-content-md-end">
-				<img src="assets/logo.svg" alt="mat-progress-buttons logo" class="logo">
-			</div>
-			<div class="col-sm-8 text-center text-md-left">
-				<h1>Mat Progress Buttons</h1>
-				<p>Angular Material Design Buttons With Progress indicators</p>
-				<p>Scroll down to see it in action!</p>
-				<p class="buttons">
-					<a mat-stroked-button color="primary" href="https://github.com/michaeldoye/mat-progress-buttons" target="_blank"><i class="fa fa-github fa-lg"></i>  Code on Github</a>
-					<a mat-stroked-button color="primary" href="https://github.com/michaeldoye/mat-progress-buttons#installation" target="_blank"><i class="fa fa-book fa-lg"></i>  Documentation</a>
-					<a mat-stroked-button color="primary" href="#" (click)="editOnStackBlitz()"><i class="fa fa-bolt fa-lg"></i>  Edit on StackBlitz</a>
-        		</p>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 d-flex justify-content-center justify-content-md-end">
+        <img src="assets/logo.svg" alt="mat-progress-buttons logo" class="logo" />
+      </div>
+      <div class="col-sm-8 text-center text-md-left">
+        <h1>Mat Progress Buttons</h1>
+        <p>Angular Material Design Buttons With Progress indicators</p>
+        <p>Scroll down to see it in action!</p>
+        <p class="buttons">
+          <a
+            mat-stroked-button
+            color="primary"
+            href="https://github.com/michaeldoye/mat-progress-buttons"
+            target="_blank"
+            ><i class="fa fa-github fa-lg"></i> Code on Github</a
+          >
+          <a
+            mat-stroked-button
+            color="primary"
+            href="https://github.com/michaeldoye/mat-progress-buttons#installation"
+            target="_blank"
+            ><i class="fa fa-book fa-lg"></i> Documentation</a
+          >
+          <a mat-stroked-button color="primary" href="#" (click)="editOnStackBlitz()"
+            ><i class="fa fa-bolt fa-lg"></i> Edit on StackBlitz</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
 
 <section class="home">
   <div class="container">
-		<!-- put your content here-->
-		<h2>Progress Spinner Button</h2>
-		<hr />
+    <!-- put your content here-->
+    <h2>Progress Spinner Button</h2>
+    <hr />
 
-		<div class="example-container">
-			<mat-toolbar>
-				<p class="example-header">
-					<span>Demo</span>
-					<span class="pull-right">
-						<a href="https://stackblitz.com/edit/mat-progress-buttons-demo" target="_blank" mat-icon-button matTooltip="Open in StackBlitz">
-							<i class="fa fa-bolt fa-lg"></i>
-						</a>
-					</span>
-				</p>
-			</mat-toolbar>
-			<mat-tab-group mat-stretch-tabs>
-				<mat-tab label="Preview">
-					<div style="padding: 30px;">
-						<mat-spinner-button (btnClick)="someFunc()" [options]="spinnerButtonOptions"></mat-spinner-button>
-<!--						<mat-spinner-button (btnClick)="someFunc1()" [options]="spinnerButtonOptions1"></mat-spinner-button>-->
-<!--						<mat-spinner-button (btnClick)="someFunc2()" [options]="spinnerButtonOptions2"></mat-spinner-button>-->
-<!--						<mat-spinner-button (btnClick)="someFunc6()" [options]="spinnerButtonOptions3"></mat-spinner-button>-->
-<!--						<mat-spinner-button (btnClick)="someFunc8()" [options]="spinnerButtonOptions4"></mat-spinner-button>-->
-					</div>
-				</mat-tab>
-				<mat-tab label="Usage">
-					<div style="padding: 30px;">
-						<p><strong>Component</strong></p>
-						<pre><code [highlight]="strokedCode" language="['typescript']"></code></pre>
-					</div>
-				</mat-tab>
-				<mat-tab label="Options">
-					<div style="padding: 30px;">
-						<p><strong>[options]</strong></p>
-						<pre><code [highlight]="strokedOpts" language="['typescript']"></code></pre>
-					</div>
-				</mat-tab>
-			</mat-tab-group>
-		</div>
+    <div class="example-container">
+      <mat-toolbar>
+        <p class="example-header">
+          <span>Demo</span>
+          <span class="pull-right">
+            <a
+              href="https://stackblitz.com/edit/mat-progress-buttons-demo"
+              target="_blank"
+              mat-icon-button
+              matTooltip="Open in StackBlitz"
+            >
+              <i class="fa fa-bolt fa-lg"></i>
+            </a>
+          </span>
+        </p>
+      </mat-toolbar>
+      <mat-tab-group mat-stretch-tabs>
+        <mat-tab label="Preview">
+          <div style="padding: 30px;">
+            <mat-spinner-button
+              (btnClick)="someFunc()"
+              [options]="spinnerButtonOptions"
+            ></mat-spinner-button>
+<!--            <mat-spinner-button-->
+<!--              (btnClick)="someFunc1()"-->
+<!--              [options]="spinnerButtonOptions1"-->
+<!--            ></mat-spinner-button>-->
+<!--            <mat-spinner-button-->
+<!--              (btnClick)="someFunc2()"-->
+<!--              [options]="spinnerButtonOptions2"-->
+<!--            ></mat-spinner-button>-->
+<!--            <mat-spinner-button-->
+<!--              (btnClick)="someFunc6()"-->
+<!--              [options]="spinnerButtonOptions3"-->
+<!--            ></mat-spinner-button>-->
+<!--            <mat-spinner-button-->
+<!--              (btnClick)="someFunc8()"-->
+<!--              [options]="spinnerButtonOptions4"-->
+<!--            ></mat-spinner-button>-->
+          </div>
+        </mat-tab>
+        <mat-tab label="Usage">
+          <div style="padding: 30px;">
+            <p><strong>Component</strong></p>
+            <pre><code [highlight]="strokedCode" language="['typescript']"></code></pre>
+          </div>
+        </mat-tab>
+        <mat-tab label="Options">
+          <div style="padding: 30px;">
+            <p><strong>[options]</strong></p>
+            <pre><code [highlight]="strokedOpts" language="['typescript']"></code></pre>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
 
-		<h2>Progress Bar Button</h2>
-		<hr />
-		<div class="example-container">
-			<mat-toolbar>
-				<p class="example-header">
-					<span>Demo</span>
-					<span class="pull-right">
-						<a href="https://stackblitz.com/edit/mat-progress-buttons-demo" target="_blank" mat-icon-button matTooltip="Open in StackBlitz">
-							<i class="fa fa-bolt fa-lg"></i>
-						</a>
-					</span>
-				</p>
-			</mat-toolbar>
-			<mat-tab-group mat-stretch-tabs>
-				<mat-tab label="Preview">
-					<div style="padding: 30px;">
-						<mat-bar-button (btnClick)="someFunc3()" [options]="barButtonOptions"></mat-bar-button>
-						<mat-bar-button (btnClick)="someFunc4()" [options]="barButtonOptions1"></mat-bar-button>
-						<mat-bar-button (btnClick)="someFunc5()" [options]="barButtonOptions2"></mat-bar-button>
-						<mat-bar-button (btnClick)="someFunc7()" [options]="barButtonOptions3"></mat-bar-button>
-					</div>
-				</mat-tab>
-				<mat-tab label="Usage">
-					<div style="padding: 30px;">
-						<p><strong>Component</strong></p>
-						<pre><code [highlight]="raisedCode" language="['typescript']"></code></pre>
-					</div>
-				</mat-tab>
-				<mat-tab label="Options">
-					<div style="padding: 30px;">
-						<p><strong>[options]</strong></p>
-						<pre><code [highlight]="raisedOpts" language="['typescript']"></code></pre>
-					</div>
-				</mat-tab>
-			</mat-tab-group>
-		</div>
-
+    <h2>Progress Bar Button</h2>
+    <hr />
+    <div class="example-container">
+      <mat-toolbar>
+        <p class="example-header">
+          <span>Demo</span>
+          <span class="pull-right">
+            <a
+              href="https://stackblitz.com/edit/mat-progress-buttons-demo"
+              target="_blank"
+              mat-icon-button
+              matTooltip="Open in StackBlitz"
+            >
+              <i class="fa fa-bolt fa-lg"></i>
+            </a>
+          </span>
+        </p>
+      </mat-toolbar>
+      <mat-tab-group mat-stretch-tabs>
+        <mat-tab label="Preview">
+          <div style="padding: 30px;">
+            <mat-bar-button
+              (btnClick)="someFunc3()"
+              [options]="barButtonOptions"
+            ></mat-bar-button>
+            <mat-bar-button
+              (btnClick)="someFunc4()"
+              [options]="barButtonOptions1"
+            ></mat-bar-button>
+            <mat-bar-button
+              (btnClick)="someFunc5()"
+              [options]="barButtonOptions2"
+            ></mat-bar-button>
+            <mat-bar-button
+              (btnClick)="someFunc7()"
+              [options]="barButtonOptions3"
+            ></mat-bar-button>
+          </div>
+        </mat-tab>
+        <mat-tab label="Usage">
+          <div style="padding: 30px;">
+            <p><strong>Component</strong></p>
+            <pre><code [highlight]="raisedCode" language="['typescript']"></code></pre>
+          </div>
+        </mat-tab>
+        <mat-tab label="Options">
+          <div style="padding: 30px;">
+            <p><strong>[options]</strong></p>
+            <pre><code [highlight]="raisedOpts" language="['typescript']"></code></pre>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
   </div>
 </section>

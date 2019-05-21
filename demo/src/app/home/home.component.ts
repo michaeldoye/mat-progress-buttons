@@ -96,7 +96,15 @@ export class HomeComponent implements OnInit {
 
   spinnerButtonOptions: MatProgressButtonOptions = {
     active: false,
-    text: 'Stroked Buttonq',
+    text: 'Stroked Button',
+    // spinnerSize: 19,
+    // raised: false,
+    // stroked: true,
+    // buttonColor: 'accent',
+    // spinnerColor: 'primary',
+    // fullWidth: false,
+    // disabled: false,
+    // mode: 'indeterminate'
   };
 
   spinnerButtonOptions1: MatProgressButtonOptions = {
@@ -215,6 +223,7 @@ export class HomeComponent implements OnInit {
   }
 
   someFunc(): void {
+    console.log('click');
     this.spinnerButtonOptions.active = true;
     setTimeout(() => {
       this.spinnerButtonOptions.active = false;
