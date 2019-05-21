@@ -56,11 +56,6 @@ export class AppModule {
 }
 ```
 
-#### Global options
-You can optionally provide global options via `forRoot()`.
-
-[TODO]
-
 Other modules in your application can simply import ` MatProgressButtonsModule `:
 
 ```js
@@ -73,6 +68,33 @@ import { MatProgressButtonsModule } from 'mat-progress-buttons';
 export class OtherModule {
 }
 ```
+
+#### Global options
+You can optionally provide global options via `forRoot()`.
+
+```js
+const defaultOptions: MatProgressButtonOptions = {
+  active: false,
+  spinnerSize: 19,
+  raised: false,
+  stroked: true,
+  buttonColor: 'accent',
+  spinnerColor: 'accent',
+  fullWidth: false,
+  disabled: false,
+  mode: 'indeterminate',
+  disableRipple: false
+};
+
+@NgModule({
+  imports: [
+    MatProgressButtonsModule.forRoot(defaultOptions),
+  ],
+  ...
+})
+```
+
+Default options will be applied to **_each_** button in that module (ideal if you are using just one button per module). Default options can be overwritten by providing options via the `[options]` input on the button.
 
 ## Usage
 
@@ -150,7 +172,46 @@ export class SomeComponent {
 };
 ```
 
-**Note**: Bar Button does not suppor the `fab` style, currently. Hope to have something like [this](https://codepen.io/DevVersion/pen/vGebGB) soon.
+**Note**: Bar Button does not suppor the `fab` style, currently.
+
+### Button Options
+
+```js
+  /** Whether the button is currently active (progress should show). */
+  active: boolean;
+  /** The button anchor text */
+  text?: string;
+  /** Theme color of the button (primary, warn, accent). */
+  buttonColor?: ThemePalette;
+  /** Theme color of the spinner (primary, warn, accent). */
+  spinnerColor?: ThemePalette;
+  /** Theme color of the progress bar (primary, warn, accent). */
+  barColor?: ThemePalette;
+  /** mat-raised-button */
+  raised?: boolean;
+  /** mat-stroked-button */
+  stroked?: boolean;
+  /** mat-flat-button */
+  flat?: boolean;
+  /** mat-fab-button */
+  fab?: boolean;
+  /** The size of the spinner for the spinner button */
+  spinnerSize?: number;
+  /** Progress Mode (determinate, indeterminate)*/
+  mode?: ProgressSpinnerMode;
+  /** Value for determinate progress */
+  value?: number;
+  /** Whether the button should be full width */
+  fullWidth?: boolean;
+  /** Whether the button is disabled*/
+  disabled?: boolean;
+  /** For fab: true only - the icon to be used for fab button */
+  icon?: string;
+  /** The button type, eg: 'submit' */
+  type?: string;
+  /** Whether the MatRipple should be disabled */
+  disableRipple?: boolean
+```
 
 <a name="run-demo-app-locally"/>
 
