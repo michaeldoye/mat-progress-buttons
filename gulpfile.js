@@ -27,8 +27,11 @@ const gulpCoveralls = require('gulp-coveralls');
 /** To order tasks */
 const runSequence = require('run-sequence');
 
+const ngFsUtils = require('@angular/compiler-cli/src/ngtsc/file_system');
+
 /** To compile & bundle the library with Angular & Rollup */
 const ngc = (args) => new Promise((resolve, reject)=>{// Promisify version of the ngc compiler
+  ngFsUtils.setFileSystem(new ngFsUtils.NodeJSFileSystem());
   let exitCode = require('@angular/compiler-cli/src/main').main(args);
   resolve(exitCode);
 });
@@ -335,7 +338,7 @@ gulp.task('npm-package', (cb) => {
   // copy the needed additional files in the 'dist' folder
   pump(
     [
-      gulp.src(['README.md', 'LICENSE', 'CHANGELOG.md', 
+      gulp.src(['README.md', 'LICENSE', 'CHANGELOG.md',
       `${config.buildDir}/lib-es5/**/*.d.ts`,
       `${config.buildDir}/lib-es5/**/*.metadata.json`]),
       gulpFile('package.json', JSON.stringify(targetPkgJson, null, 2)),
@@ -356,7 +359,7 @@ gulp.task('rollup-bundle', (cb) => {
       // the window object.
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals for more.
 
-      // Angular dependencies 
+      // Angular dependencies
       '@angular/core': 'ng.core',
       '@angular/common': 'ng.common',
 
@@ -385,7 +388,7 @@ gulp.task('rollup-bundle', (cb) => {
       // Add any other dependency or peer dependency of your library here
       // This is required for UMD bundle users.
       // See https://github.com/tinesoft/generator-ngx-library/TROUBLESHOUTING.md if trouble
-      
+
 
     };
     const rollupBaseConfig = {
@@ -402,7 +405,7 @@ gulp.task('rollup-bundle', (cb) => {
           include: ['node_modules/rxjs/**']
         }),
         rollupSourcemaps(),
-        rollupNodeResolve({ 
+        rollupNodeResolve({
           jsnext: true,
           module: true,
           jail: distFolder, // to use final 'package.json' from 'dist/'
