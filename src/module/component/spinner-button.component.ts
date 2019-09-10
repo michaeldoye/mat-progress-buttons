@@ -16,11 +16,11 @@ import { MatProgressButtonOptions } from '../mat-progress-buttons.interface';
   styleUrls: ['./spinner-button.component.scss']
 })
 export class MatSpinnerButtonComponent implements OnInit {
-  public buttonOptions: Partial<MatProgressButtonOptions>;
-  private _options: Partial<MatProgressButtonOptions>;
+  public buttonOptions: MatProgressButtonOptions;
+  private _options: MatProgressButtonOptions;
 
   @Output() btnClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
-  @Input() set options(value: Partial<MatProgressButtonOptions>) {
+  @Input() set options(value: MatProgressButtonOptions) {
     this._options = value;
   }
 
@@ -37,7 +37,7 @@ export class MatSpinnerButtonComponent implements OnInit {
     @Inject('defaultButtonOptions') private _defaultOptions: MatProgressButtonOptions
   ) {}
 
-  public ngOnInit(): void {
+  ngOnInit(): void {
     this.buttonOptions = this._defaultOptions
       ? Object.assign(this._defaultOptions, { ...this._options })
       : this._options;
