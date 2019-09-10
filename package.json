@@ -1,7 +1,7 @@
 {
   "name": "mat-progress-buttons",
   "description": "Material Design Progress Buttons",
-  "version": "8.0.4",
+  "version": "8.0.5",
   "homepage": "https://github.com/michaeldoye/mat-progress-buttons",
   "author": {
     "name": "Michael Doye",
@@ -81,7 +81,7 @@
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "3.0.0",
     "lodash": "^4.17.11",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "postcss": "6.0.22",
     "postcss-strip-inline-comments": "0.1.5",
     "pump": "3.0.0",
@@ -97,8 +97,8 @@
     "source-map-loader": "0.2.3",
     "to-string-loader": "1.1.5",
     "travis-status": "2.0.0",
-    "tslint": "5.7.0",
     "tsickle": "0.35.0",
+    "tslint": "5.7.0",
     "typescript": "~3.5.3",
     "webpack": "4.8.0",
     "webpack-dev-middleware": "3.1.3",
