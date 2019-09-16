@@ -7,6 +7,7 @@
   [class.mat-stroked-button]="options.stroked"
   [class.mat-flat-button]="options.flat"
   [class.mat-fab]="options.fab"
+  [ngClass]="options.customClass"
   [disabled]="options.active || options.disabled">
 
   <span
@@ -20,7 +21,7 @@
     *ngIf="options.fab && options.icon">
     <mat-icon>{{ options.icon }}</mat-icon>
   </ng-container>
-  
+
   <mat-spinner class="spinner"
     [diameter]="options.fab ? 58 : options.spinnerSize"
     [color]="options.spinnerColor"
