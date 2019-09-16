@@ -30,6 +30,7 @@ export class HomeComponent implements OnInit {
       spinnerColor: 'accent',
       fullWidth: false,
       disabled: false,
+      customClass: 'some-class',
       mode: 'indeterminate',
     };
 
@@ -51,6 +52,7 @@ export class HomeComponent implements OnInit {
     spinnerColor: string,
     fullWidth: boolean,
     disabled: boolean,
+    customClass: 'some-class',
     mode: string`;
 
   raisedCode = `  import { Component } from '@angular/core';
@@ -72,6 +74,7 @@ export class HomeComponent implements OnInit {
       stroked: true,
       mode: 'indeterminate',
       value: 0,
+      customClass: 'some-class',
       disabled: false
     };
 
@@ -92,6 +95,7 @@ export class HomeComponent implements OnInit {
     barColor: string,
     fullWidth: boolean,
     disabled: boolean,
+    customClass: 'some-class',
     mode: string`;
 
   spinnerButtonOptions: MatProgressButtonOptions = {
@@ -104,7 +108,8 @@ export class HomeComponent implements OnInit {
     spinnerColor: 'accent',
     fullWidth: false,
     disabled: false,
-    mode: 'indeterminate'
+    mode: 'indeterminate',
+    customClass: 'some-class'
   };
 
   spinnerButtonOptions1: MatProgressButtonOptions = {
@@ -172,7 +177,8 @@ export class HomeComponent implements OnInit {
     stroked: true,
     mode: 'indeterminate',
     value: 0,
-    disabled: false
+    disabled: false,
+    customClass: 'some-other-class'
   };
 
   barButtonOptions1: MatProgressButtonOptions = {

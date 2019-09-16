@@ -6,6 +6,7 @@
   [class.mat-stroked-button]="options.stroked"
   [class.mat-flat-button]="options.flat"
   [class.fullWidth]="options.fullWidth"
+  [ngClass]="options.customClass"
   [disabled]="options.active || options.disabled">
 
   <span>{{ options.text }}</span>
