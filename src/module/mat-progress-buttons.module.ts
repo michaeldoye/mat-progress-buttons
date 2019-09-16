@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
-import { MatSpinnerButtonComponent } from './component/spinner-button.component';
-import { MatBarButtonComponent } from './component/bar-button.component';
+import { MatSpinnerButtonComponent } from './component/spinner-button/spinner-button.component';
+import { MatBarButtonComponent } from './component/bar-button/bar-button.component';
 
 import {
   MatButtonModule,
@@ -13,8 +13,8 @@ import {
 } from '@angular/material';
 
 // Export module's public API
-export { MatSpinnerButtonComponent } from './component/spinner-button.component';
-export { MatBarButtonComponent } from './component/bar-button.component';
+export { MatSpinnerButtonComponent } from './component/spinner-button/spinner-button.component';
+export { MatBarButtonComponent } from './component/bar-button/bar-button.component';
 export { MatProgressButtonOptions } from './mat-progress-buttons.interface';
 
 @NgModule({
