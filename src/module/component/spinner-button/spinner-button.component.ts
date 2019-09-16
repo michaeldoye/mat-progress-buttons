@@ -7,7 +7,7 @@ import {
   OnInit,
   Inject
 } from '@angular/core';
-import { MatProgressButtonOptions } from '../mat-progress-buttons.interface';
+import { MatProgressButtonOptions } from '../../mat-progress-buttons.interface';
 
 @Component({
   // tslint:disable-next-line:component-selector
