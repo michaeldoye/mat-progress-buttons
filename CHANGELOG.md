@@ -1,3 +1,13 @@
+<a name="8.0.6"></a>
+## [8.0.6](https://github.com/michaeldoye/mat-progress-buttons/compare/v8.0.5...v8.0.6) (2019-09-16)
+
+
+### Features
+
+* **lib:** allow custom class for spinner and bar buttons ([#58](https://github.com/michaeldoye/mat-progress-buttons/issues/58)) ([f42a593](https://github.com/michaeldoye/mat-progress-buttons/commit/f42a593))
+
+
+
 <a name="8.0.5"></a>
 ## [8.0.5](https://github.com/michaeldoye/mat-progress-buttons/compare/v8.0.4...v8.0.5) (2019-09-10)
 
