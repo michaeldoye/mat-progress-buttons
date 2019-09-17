@@ -109,6 +109,51 @@ export class SomeComponent {
 };
 ```
 
+### Spinner button FAB
+
+You can use the spinner button with a `mat-fab` with an icon. Both `mat-icon` and `font awesome` are supported.
+
+To set up fontawesome to work with `mat-icon` you can see instructions [here](https://stackoverflow.com/a/46208824/3055401)
+
+Use the `icon` property on the `options` object
+
+```
+  btnOpts: MatProgressButtonOptions = {
+    active: false,
+    text: 'Stroked Button',
+    spinnerSize: 19,
+    raised: false,
+    stroked: true,
+    flat: false,
+    fab: true, // set fab to true
+    buttonColor: 'accent',
+    spinnerColor: 'accent',
+    fullWidth: false,
+    disabled: false,
+    mode: 'indeterminate',
+    icon: {
+      color: primary,
+      fontSet: 'fa',
+      fontIcon: 'fa-save',
+      inline: true
+    },
+  };
+```
+
+#### Icon API
+
+```
+interface MatProgressButtonIcon {
+  color?: ThemePalette; // icon color (primary or accent)
+  fontIcon?: string;    // name of the icon (for fontawsome, use 'fa-[icon_name])'
+  fontSet?: string;     // if using fontawesome, use 'fa' (omit for material icons)
+  inline?: boolean;     // automatically size the icon
+  svgIcon?: string;     // name of the icon in the SVG icon set.
+}
+```
+
+More info in Angular Material [Docs](https://material.angular.io/components/icon/api#MatIcon)
+
 ### Bar Button
 
 ```js

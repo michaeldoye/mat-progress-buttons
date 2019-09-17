@@ -32,6 +32,12 @@ export class HomeComponent implements OnInit {
       disabled: false,
       customClass: 'some-class',
       mode: 'indeterminate',
+      // use font-awesome icon
+      icon: {
+        fontSet: 'fa',
+        fontIcon: 'fa-heart',
+        inline: true
+      },
     };
 
     // Click handler
@@ -165,7 +171,11 @@ export class HomeComponent implements OnInit {
     fullWidth: false,
     disabled: false,
     mode: 'indeterminate',
-    icon: 'favorite',
+    icon: {
+      fontSet: 'fa',
+      fontIcon: 'fa-heart',
+      inline: true
+    },
   };
 
   barButtonOptions: MatProgressButtonOptions = {
