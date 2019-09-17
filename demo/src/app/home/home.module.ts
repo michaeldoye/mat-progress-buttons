@@ -7,7 +7,7 @@ import typescript from 'highlight.js/lib/languages/typescript';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { MatButtonModule, MatTabsModule, MatToolbarModule, MatTooltipModule } from '@angular/material';
+import {MatButtonModule, MatTabsModule, MatToolbarModule, MatTooltipModule} from '@angular/material';
 
 export function hljsLanguages() {
     return [
@@ -15,17 +15,17 @@ export function hljsLanguages() {
     ];
   }
 @NgModule({
-    imports: [
-        CommonModule,
-        BrowserAnimationsModule,
-        MatProgressButtonsModule.forRoot(),
-        HighlightModule.forRoot({languages: hljsLanguages}),
-        HomeRoutingModule,
-        MatButtonModule,
-        MatTabsModule,
-        MatToolbarModule,
-        MatTooltipModule
-    ],
+  imports: [
+    CommonModule,
+    BrowserAnimationsModule,
+    MatProgressButtonsModule.forRoot(),
+    HighlightModule.forRoot({languages: hljsLanguages}),
+    HomeRoutingModule,
+    MatButtonModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule
+  ],
     declarations: [HomeComponent],
 })
 export class HomeModule { }

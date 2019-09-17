@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppSharedModule } from './shared/shared.module';
+import { AppSharedModule } from './shared';
 import { HomeModule } from './home/home.module';
 import { AppComponent } from './app.component';
+import { MatIconRegistry } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,11 @@ import { AppComponent } from './app.component';
     AppSharedModule,
     HomeModule
   ],
-  providers: [],
+  providers: [MatIconRegistry],
   bootstrap: [AppComponent]
 })
 export class AppModule {
+  constructor(public matIconRegistry: MatIconRegistry) {
+    matIconRegistry.registerFontClassAlias('fontawesome', 'fa');
+  }
 }

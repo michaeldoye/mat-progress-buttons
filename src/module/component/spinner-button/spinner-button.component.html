@@ -19,7 +19,14 @@
 
   <ng-container
     *ngIf="options.fab && options.icon">
-    <mat-icon>{{ options.icon }}</mat-icon>
+    <mat-icon
+      [fontSet]="options.icon.fontSet"
+      [fontIcon]="options.icon.fontIcon"
+      [color]="options.icon.color"
+      [svgIcon]="options.icon.svgIcon"
+      [inline]="options.icon.inline">
+        {{ options.icon.fontSet ? '' : options.icon.fontIcon }}
+    </mat-icon>
   </ng-container>
 
   <mat-spinner class="spinner"
