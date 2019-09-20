@@ -97,6 +97,13 @@ export class SomeComponent {
     fullWidth: false,
     disabled: false,
     mode: 'indeterminate',
+    customClass: 'some-class',
+    // add an icon to the button
+    buttonIcon: {
+      fontSet: 'fa',
+      fontIcon: 'fa-heart',
+      inline: true
+    }
   };
 
   // Click handler
