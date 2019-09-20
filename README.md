@@ -184,7 +184,14 @@ export class SomeComponent {
     flat: false,
     mode: 'indeterminate',
     value: 0,
-    disabled: false
+    disabled: false,
+    customClass: 'some-class',
+    // add an icon to the button
+    buttonIcon: {
+      fontSet: 'fa',
+      fontIcon: 'fa-heart',
+      inline: true
+    }
   };
 
   // Click handler
