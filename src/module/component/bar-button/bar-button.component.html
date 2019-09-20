@@ -9,6 +9,20 @@
   [ngClass]="options.customClass"
   [disabled]="options.active || options.disabled">
 
+  <ng-container
+    *ngIf="options.buttonIcon">
+    <mat-icon
+      [class.is-mat-icon]="!options.buttonIcon.fontSet"
+      [ngClass]="options.buttonIcon.customClass"
+      [fontSet]="options.buttonIcon.fontSet"
+      [fontIcon]="options.buttonIcon.fontIcon"
+      [color]="options.buttonIcon.color"
+      [svgIcon]="options.buttonIcon.svgIcon"
+      [inline]="options.buttonIcon.inline">
+      {{ options.buttonIcon.fontSet ? '' : options.buttonIcon.fontIcon }}
+    </mat-icon>
+  </ng-container>
+
   <span>{{ options.text }}</span>
 
   <mat-progress-bar

@@ -32,12 +32,18 @@ export class HomeComponent implements OnInit {
       disabled: false,
       customClass: 'some-class',
       mode: 'indeterminate',
-      // use font-awesome icon
+      // use font-awesome icon for fab
       icon: {
         fontSet: 'fa',
         fontIcon: 'fa-heart',
         inline: true
       },
+      // Icon for normal buttons
+      buttonIcon: {
+        fontSet: 'fa',
+        fontIcon: 'fa-heart',
+        inline: true
+      }
     };
 
     // Click handler
@@ -81,7 +87,13 @@ export class HomeComponent implements OnInit {
       mode: 'indeterminate',
       value: 0,
       customClass: 'some-class',
-      disabled: false
+      disabled: false,
+      // Icon for normal buttons
+      buttonIcon: {
+        fontSet: 'fa',
+        fontIcon: 'fa-heart',
+        inline: true
+      }
     };
 
     // Click handler
@@ -115,7 +127,10 @@ export class HomeComponent implements OnInit {
     fullWidth: false,
     disabled: false,
     mode: 'indeterminate',
-    customClass: 'some-class'
+    customClass: 'some-class',
+    buttonIcon: {
+      fontIcon: 'favorite',
+    },
   };
 
   spinnerButtonOptions1: MatProgressButtonOptions = {
@@ -128,7 +143,12 @@ export class HomeComponent implements OnInit {
     spinnerColor: 'accent',
     fullWidth: false,
     disabled: false,
-    mode: 'indeterminate'
+    mode: 'indeterminate',
+    buttonIcon: {
+      fontSet: 'fa',
+      fontIcon: 'fa-heart',
+      inline: true
+    }
   };
 
   spinnerButtonOptions2: MatProgressButtonOptions = {
@@ -188,7 +208,10 @@ export class HomeComponent implements OnInit {
     mode: 'indeterminate',
     value: 0,
     disabled: false,
-    customClass: 'some-other-class'
+    customClass: 'some-other-class',
+    buttonIcon: {
+      fontIcon: 'favorite',
+    },
   };
 
   barButtonOptions1: MatProgressButtonOptions = {
