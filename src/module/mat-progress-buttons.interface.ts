@@ -19,6 +19,7 @@ export interface MatProgressButtonOptions {
   icon?: MatProgressButtonIcon;
   type?: string;
   customClass?: string;
+  buttonIcon?: MatProgressButtonIcon;
 }
 
 interface MatProgressButtonIcon {
@@ -27,4 +28,5 @@ interface MatProgressButtonIcon {
   fontSet?: string;
   inline?: boolean;
   svgIcon?: string;
+  customClass?: string;
 }
