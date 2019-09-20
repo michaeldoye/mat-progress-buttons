@@ -1,3 +1,19 @@
+<a name="8.0.7"></a>
+## [8.0.7](https://github.com/michaeldoye/mat-progress-buttons/compare/v8.0.6...v8.0.7) (2019-09-20)
+
+
+### Features
+
+* **lib:** full icon support for mat-fab ([#59](https://github.com/michaeldoye/mat-progress-buttons/issues/59)) ([c00f7c7](https://github.com/michaeldoye/mat-progress-buttons/commit/c00f7c7)), closes [#37](https://github.com/michaeldoye/mat-progress-buttons/issues/37)
+* **lib:** full icon support for spinner and bar buttons ([f49d900](https://github.com/michaeldoye/mat-progress-buttons/commit/f49d900)), closes [#13](https://github.com/michaeldoye/mat-progress-buttons/issues/13)
+
+
+### BREAKING CHANGES
+
+* **lib:** change how icons are used in mat-fab - see readme
+
+
+
 <a name="8.0.6"></a>
 ## [8.0.6](https://github.com/michaeldoye/mat-progress-buttons/compare/v8.0.5...v8.0.6) (2019-09-16)
 

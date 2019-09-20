@@ -144,11 +144,6 @@ export class HomeComponent implements OnInit {
     fullWidth: false,
     disabled: false,
     mode: 'indeterminate',
-    buttonIcon: {
-      fontSet: 'fa',
-      fontIcon: 'fa-heart',
-      inline: true
-    }
   };
 
   spinnerButtonOptions2: MatProgressButtonOptions = {
