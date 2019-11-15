@@ -46,6 +46,7 @@
   </ng-container>
 
   <mat-spinner class="spinner"
+    *ngIf="options.active && !options.disabled"
     [diameter]="options.fab ? 58 : options.spinnerSize"
     [color]="options.spinnerColor"
     [mode]="options.mode"
