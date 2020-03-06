@@ -52,7 +52,7 @@
     "ansi-colors": "2.0.1",
     "autoprefixer": "8.4.1",
     "awesome-typescript-loader": "5.0.0",
-    "codelyzer": "4.2.1",
+    "codelyzer": "^5.2.1",
     "commitplease": "3.2.0",
     "conventional-github-releaser": "2.0.2",
     "core-js": "2.5.5",
