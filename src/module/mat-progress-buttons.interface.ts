@@ -1,4 +1,5 @@
-import { ProgressSpinnerMode, ThemePalette } from '@angular/material';
+import { ThemePalette } from '@angular/material/core';
+import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 
 export interface MatProgressButtonOptions {
   active: boolean;

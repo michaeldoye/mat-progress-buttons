@@ -15,6 +15,7 @@
     "genDir": "../tmp/lib-gen-dir/",
     "flatModuleOutFile": "mat-progress-buttons.js",
     "flatModuleId": "mat-progress-buttons",
-    "annotateForClosureCompiler": true
+    "annotateForClosureCompiler": true,
+    "enableIvy": false
   }
 }
