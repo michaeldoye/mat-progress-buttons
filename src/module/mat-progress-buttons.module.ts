@@ -3,14 +3,11 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { MatSpinnerButtonComponent } from './component/spinner-button/spinner-button.component';
 import { MatBarButtonComponent } from './component/bar-button/bar-button.component';
-
-import {
-  MatButtonModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatRippleModule,
-  MatIconModule,
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatRippleModule } from '@angular/material/core';
+import { MatIconModule } from '@angular/material/icon';
 
 // Export module's public API
 export { MatSpinnerButtonComponent } from './component/spinner-button/spinner-button.component';
