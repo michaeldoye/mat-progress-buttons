@@ -9,7 +9,7 @@ const routes: Routes = [
     },
     {
         path: 'getting-started',
-        loadChildren: 'app/getting-started/getting-started.module#GettingStartedModule'
+        loadChildren: () => import('app/getting-started/getting-started.module').then(m => m.GettingStartedModule)
     }
 ];
 
