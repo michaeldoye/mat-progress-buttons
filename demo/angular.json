@@ -152,5 +152,8 @@
       }
     }
   },
-  "defaultProject": "mat-progress-buttons-demo"
+  "defaultProject": "mat-progress-buttons-demo",
+  "cli": {
+    "analytics": false
+  }
 }
