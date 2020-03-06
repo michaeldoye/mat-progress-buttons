@@ -36,7 +36,7 @@ export { MatProgressButtonOptions } from './mat-progress-buttons.interface';
   ]
 })
 export class MatProgressButtonsModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<MatProgressButtonsModule> {
     return {
       ngModule: MatProgressButtonsModule
     };
