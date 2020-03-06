@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppSharedModule } from './shared';
 import { HomeModule } from './home/home.module';
 import { AppComponent } from './app.component';
-import { MatIconRegistry } from '@angular/material';
+import { MatIconRegistry } from '@angular/material/icon';
 
 @NgModule({
   declarations: [

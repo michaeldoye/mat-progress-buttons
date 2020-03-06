@@ -7,7 +7,10 @@ import typescript from 'highlight.js/lib/languages/typescript';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import {MatButtonModule, MatTabsModule, MatToolbarModule, MatTooltipModule} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 export function hljsLanguages() {
     return [
