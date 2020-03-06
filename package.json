@@ -98,7 +98,7 @@
     "source-map-loader": "0.2.3",
     "to-string-loader": "1.1.5",
     "travis-status": "2.0.0",
-    "tsickle": "^0.38.1",
+    "tsickle": "^0.37.1",
     "tslint": "5.7.0",
     "typescript": "~3.5.3",
     "webpack": "4.8.0",
