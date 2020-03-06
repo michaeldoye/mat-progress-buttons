@@ -28,14 +28,14 @@
     "check-travis": " travis-status --repo=michaeldoye/mat-progress-buttons --branch=master --fail-pending || echo 'Not yet passing'"
   },
   "dependencies": {
-    "@angular-devkit/schematics": "^0.8.2",
-    "@angular/cdk": "^8.0.2",
+    "@angular/cdk": "^9.1.1",
     "@angular/common": "~9.0.5",
     "@angular/core": "~9.0.5",
-    "@angular/material": "^8.0.2",
+    "@angular/material": "^9.1.1",
     "tslib": "^1.11.1"
   },
   "devDependencies": {
+    "@angular-devkit/schematics": "^9.0.5",
     "@angular/animations": "^9.0.5",
     "@angular/compiler": "~9.0.5",
     "@angular/compiler-cli": "~9.0.5",
