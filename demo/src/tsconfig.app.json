@@ -3,10 +3,13 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
-    "types": [],
+    "types": ["node"],
     "paths": {
       "@angular/*": ["../node_modules/@angular/*"]
-    }
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "files": [
     "main.ts",

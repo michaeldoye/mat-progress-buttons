@@ -7,7 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentWrapperComponent } from './content-wrapper/content-wrapper.component';
 
 @NgModule({
-    imports: [RouterModule, NgbCollapseModule.forRoot() ],
+    imports: [RouterModule, NgbCollapseModule ],
     exports: [HeaderComponent, FooterComponent, ContentWrapperComponent],
     declarations: [HeaderComponent, FooterComponent, ContentWrapperComponent],
     providers: [],
