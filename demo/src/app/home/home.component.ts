@@ -66,7 +66,8 @@ export class HomeComponent implements OnInit {
     disabled: boolean,
     customClass: 'some-class',
     mode: string`;
-
+  activeCode = `   [active]="active$ | async"`;
+  disabledCode = `   [disabled]="disabled$ | async"`;
   raisedCode = `  import { Component } from '@angular/core';
   import { MatProgressButtonOptions } from 'mat-progress-buttons';
 
