@@ -1,3 +1,13 @@
+<a name="9.1.1"></a>
+## [9.1.1](https://github.com/michaeldoye/mat-progress-buttons/compare/v9.0.1...v9.1.1) (2020-03-12)
+
+
+### Features
+
+* **lib:** add [active] and [disabled] inputs ([6cefa98](https://github.com/michaeldoye/mat-progress-buttons/commit/6cefa98))
+
+
+
 <a name="9.0.1"></a>
 ## [9.0.1](https://github.com/michaeldoye/mat-progress-buttons/compare/v8.0.8...v9.0.1) (2020-03-06)
 
