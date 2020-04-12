@@ -204,6 +204,29 @@ export class SomeComponent {
 };
 ```
 
+### Overriding default CSS
+
+To override CSS (color and background color of spinner buttons), you can write CSS for particular component and use `ViewEncapsulation.None`
+
+Example:
+
+CSS:
+
+```
+.class_name {
+    background-color: red; // etc.
+}
+```
+
+TS:
+
+```
+@Component({
+  ...,
+  encapsulation : ViewEncapsulation.None // Here
+})
+```
+
 **Note**: Bar Button does not suppor the `fab` style, currently. Hope to have something like [this](https://codepen.io/DevVersion/pen/vGebGB) soon.
 
 <a name="run-demo-app-locally"/>
