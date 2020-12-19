@@ -49,10 +49,21 @@
       }
     },
     "@angular/animations": {
-      "version": "9.1.13",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/animations/-/animations-9.1.13.tgz",
-      "integrity": "sha1-VhMF979Kel6j/xctb6wxYVZnrLA=",
-      "dev": true
+      "version": "10.2.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/animations/-/animations-10.2.4.tgz",
+      "integrity": "sha1-bCIqofTv0Hj0xziCNe9bkUS/gKQ=",
+      "dev": true,
+      "requires": {
+        "tslib": "^2.0.0"
+      },
+      "dependencies": {
+        "tslib": {
+          "version": "2.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/tslib/-/tslib-2.0.3.tgz",
+          "integrity": "sha1-jgdBrEX8DCJuWKF7/D5kubxsphw=",
+          "dev": true
+        }
+      }
     },
     "@angular/cdk": {
       "version": "9.2.4",
@@ -63,20 +74,41 @@
       }
     },
     "@angular/common": {
-      "version": "9.0.7",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/common/-/common-9.0.7.tgz",
-      "integrity": "sha1-pdllFawNttf8yxThbSv3E8+EWp0="
+      "version": "10.2.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/common/-/common-10.2.4.tgz",
+      "integrity": "sha1-+xdy6leAyW4AQRkAxURX8MvPQBs=",
+      "requires": {
+        "tslib": "^2.0.0"
+      },
+      "dependencies": {
+        "tslib": {
+          "version": "2.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/tslib/-/tslib-2.0.3.tgz",
+          "integrity": "sha1-jgdBrEX8DCJuWKF7/D5kubxsphw="
+        }
+      }
     },
     "@angular/compiler": {
-      "version": "9.0.7",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/compiler/-/compiler-9.0.7.tgz",
-      "integrity": "sha1-PPj59txueHUGoLyURMSruFe7EGg=",
-      "dev": true
+      "version": "10.2.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/compiler/-/compiler-10.2.4.tgz",
+      "integrity": "sha1-h+2SuuBNq3jqzheeyT7FY+LZRrw=",
+      "dev": true,
+      "requires": {
+        "tslib": "^2.0.0"
+      },
+      "dependencies": {
+        "tslib": {
+          "version": "2.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/tslib/-/tslib-2.0.3.tgz",
+          "integrity": "sha1-jgdBrEX8DCJuWKF7/D5kubxsphw=",
+          "dev": true
+        }
+      }
     },
     "@angular/compiler-cli": {
-      "version": "9.0.7",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/compiler-cli/-/compiler-cli-9.0.7.tgz",
-      "integrity": "sha1-HtVSLDK9eqw03wbdLn8n1RsH2QA=",
+      "version": "10.2.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/compiler-cli/-/compiler-cli-10.2.4.tgz",
+      "integrity": "sha1-6Q+UP8NO3zotZe8tf+J/r6CzZdc=",
       "dev": true,
       "requires": {
         "canonical-path": "1.0.0",
@@ -90,7 +122,8 @@
         "semver": "^6.3.0",
         "source-map": "^0.6.1",
         "sourcemap-codec": "^1.4.8",
-        "yargs": "13.1.0"
+        "tslib": "^2.0.0",
+        "yargs": "^16.1.1"
       },
       "dependencies": {
         "source-map": {
@@ -99,37 +132,60 @@
           "integrity": "sha1-dHIq8y6WFOnCh6jQu95IteLxomM=",
           "dev": true
         },
+        "tslib": {
+          "version": "2.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/tslib/-/tslib-2.0.3.tgz",
+          "integrity": "sha1-jgdBrEX8DCJuWKF7/D5kubxsphw=",
+          "dev": true
+        },
         "yargs": {
-          "version": "13.1.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/yargs/-/yargs-13.1.0.tgz",
-          "integrity": "sha1-snKc5L/AxYSTlxlRQJnYqRatIwE=",
+          "version": "16.2.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/yargs/-/yargs-16.2.0.tgz",
+          "integrity": "sha1-HIK/D2tqZur85+8w43b0mhJHf2Y=",
           "dev": true,
           "requires": {
-            "cliui": "^4.0.0",
-            "find-up": "^3.0.0",
-            "get-caller-file": "^2.0.1",
-            "os-locale": "^3.1.0",
+            "cliui": "^7.0.2",
+            "escalade": "^3.1.1",
+            "get-caller-file": "^2.0.5",
             "require-directory": "^2.1.1",
-            "require-main-filename": "^2.0.0",
-            "set-blocking": "^2.0.0",
-            "string-width": "^3.0.0",
-            "which-module": "^2.0.0",
-            "y18n": "^4.0.0",
-            "yargs-parser": "^13.0.0"
+            "string-width": "^4.2.0",
+            "y18n": "^5.0.5",
+            "yargs-parser": "^20.2.2"
           }
         }
       }
     },
     "@angular/core": {
-      "version": "9.0.7",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/core/-/core-9.0.7.tgz",
-      "integrity": "sha1-919O2OpyH0TJ33dQL9EUqI25iOM="
+      "version": "10.2.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/core/-/core-10.2.4.tgz",
+      "integrity": "sha1-ESQGH4Iy15/P91CMkkPsXsP8APM=",
+      "requires": {
+        "tslib": "^2.0.0"
+      },
+      "dependencies": {
+        "tslib": {
+          "version": "2.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/tslib/-/tslib-2.0.3.tgz",
+          "integrity": "sha1-jgdBrEX8DCJuWKF7/D5kubxsphw="
+        }
+      }
     },
     "@angular/forms": {
-      "version": "9.1.13",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/forms/-/forms-9.1.13.tgz",
-      "integrity": "sha1-o4E2YbWMea7P5+TiJNfIUm04fYc=",
-      "dev": true
+      "version": "10.2.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/forms/-/forms-10.2.4.tgz",
+      "integrity": "sha1-gyVP3Q8f3O6ICRdfGagEx75eqOk=",
+      "dev": true,
+      "requires": {
+        "tslib": "^2.0.0"
+      },
+      "dependencies": {
+        "tslib": {
+          "version": "2.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/tslib/-/tslib-2.0.3.tgz",
+          "integrity": "sha1-jgdBrEX8DCJuWKF7/D5kubxsphw=",
+          "dev": true
+        }
+      }
     },
     "@angular/material": {
       "version": "9.2.4",
@@ -137,25 +193,56 @@
       "integrity": "sha1-JmbvYG+7iNYPji8YxeT5Sj3Vctg="
     },
     "@angular/platform-browser": {
-      "version": "9.0.7",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/platform-browser/-/platform-browser-9.0.7.tgz",
-      "integrity": "sha1-BFQ4Ab3Z035FK8NE7qbVeFZf0sA=",
-      "dev": true
+      "version": "10.2.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/platform-browser/-/platform-browser-10.2.4.tgz",
+      "integrity": "sha1-CPoM//iJURINADJ5k+AKRFTOAjA=",
+      "dev": true,
+      "requires": {
+        "tslib": "^2.0.0"
+      },
+      "dependencies": {
+        "tslib": {
+          "version": "2.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/tslib/-/tslib-2.0.3.tgz",
+          "integrity": "sha1-jgdBrEX8DCJuWKF7/D5kubxsphw=",
+          "dev": true
+        }
+      }
     },
     "@angular/platform-browser-dynamic": {
-      "version": "9.0.7",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/platform-browser-dynamic/-/platform-browser-dynamic-9.0.7.tgz",
-      "integrity": "sha1-fKfnKP6guoGxAJ3hqlmgA7c8ia8=",
-      "dev": true
+      "version": "10.2.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/platform-browser-dynamic/-/platform-browser-dynamic-10.2.4.tgz",
+      "integrity": "sha1-wvyH+e34YqnzEPNKeh+QgrJZ9zo=",
+      "dev": true,
+      "requires": {
+        "tslib": "^2.0.0"
+      },
+      "dependencies": {
+        "tslib": {
+          "version": "2.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/tslib/-/tslib-2.0.3.tgz",
+          "integrity": "sha1-jgdBrEX8DCJuWKF7/D5kubxsphw=",
+          "dev": true
+        }
+      }
     },
     "@angular/platform-server": {
-      "version": "9.0.7",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/platform-server/-/platform-server-9.0.7.tgz",
-      "integrity": "sha1-COKilKOcDzEOoyBB6lqt4JvPmz8=",
+      "version": "10.2.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/@angular/platform-server/-/platform-server-10.2.4.tgz",
+      "integrity": "sha1-7ERlPGK/+9wplqE9RxTyiHgq/9U=",
       "dev": true,
       "requires": {
         "domino": "^2.1.2",
-        "xhr2": "^0.1.4"
+        "tslib": "^2.0.0",
+        "xhr2": "^0.2.0"
+      },
+      "dependencies": {
+        "tslib": {
+          "version": "2.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/tslib/-/tslib-2.0.3.tgz",
+          "integrity": "sha1-jgdBrEX8DCJuWKF7/D5kubxsphw=",
+          "dev": true
+        }
       }
     },
     "@babel/runtime": {
@@ -321,12 +408,6 @@
             "parse-node-version": "^1.0.0",
             "time-stamp": "^1.0.0"
           }
-        },
-        "typescript": {
-          "version": "4.1.3",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/typescript/-/typescript-4.1.3.tgz",
-          "integrity": "sha1-UZ1YK9lMugz4k0x9joRn5HP1O7c=",
-          "dev": true
         }
       }
     },
@@ -2291,6 +2372,12 @@
             "pseudomap": "^1.0.2",
             "yallist": "^2.1.2"
           }
+        },
+        "y18n": {
+          "version": "4.0.1",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/y18n/-/y18n-4.0.1.tgz",
+          "integrity": "sha1-jbK4PDHF11CZu4kLI/MJSJHiR9Q=",
+          "dev": true
         }
       }
     },
@@ -2368,9 +2455,9 @@
       }
     },
     "camelcase": {
-      "version": "5.3.1",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/camelcase/-/camelcase-5.3.1.tgz",
-      "integrity": "sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=",
+      "version": "4.1.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/camelcase/-/camelcase-4.1.0.tgz",
+      "integrity": "sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=",
       "dev": true
     },
     "camelcase-keys": {
@@ -2382,14 +2469,6 @@
         "camelcase": "^4.1.0",
         "map-obj": "^2.0.0",
         "quick-lru": "^1.0.0"
-      },
-      "dependencies": {
-        "camelcase": {
-          "version": "4.1.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/camelcase/-/camelcase-4.1.0.tgz",
-          "integrity": "sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=",
-          "dev": true
-        }
       }
     },
     "caniuse-api": {
@@ -2626,41 +2705,14 @@
       "dev": true
     },
     "cliui": {
-      "version": "4.1.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/cliui/-/cliui-4.1.0.tgz",
-      "integrity": "sha1-NIQi2+gtgAswIu709qwQvy5NG0k=",
+      "version": "7.0.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/cliui/-/cliui-7.0.4.tgz",
+      "integrity": "sha1-oCZe5lVHb8gHrqnfPfjfd4OAi08=",
       "dev": true,
       "requires": {
-        "string-width": "^2.1.1",
-        "strip-ansi": "^4.0.0",
-        "wrap-ansi": "^2.0.0"
-      },
-      "dependencies": {
-        "ansi-regex": {
-          "version": "3.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/ansi-regex/-/ansi-regex-3.0.0.tgz",
-          "integrity": "sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=",
-          "dev": true
-        },
-        "string-width": {
-          "version": "2.1.1",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/string-width/-/string-width-2.1.1.tgz",
-          "integrity": "sha1-q5Pyeo3BPSjKyBXEYhQ6bZASrp4=",
-          "dev": true,
-          "requires": {
-            "is-fullwidth-code-point": "^2.0.0",
-            "strip-ansi": "^4.0.0"
-          }
-        },
-        "strip-ansi": {
-          "version": "4.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/strip-ansi/-/strip-ansi-4.0.0.tgz",
-          "integrity": "sha1-qEeQIusaw2iocTibY1JixQXuNo8=",
-          "dev": true,
-          "requires": {
-            "ansi-regex": "^3.0.0"
-          }
-        }
+        "string-width": "^4.2.0",
+        "strip-ansi": "^6.0.0",
+        "wrap-ansi": "^7.0.0"
       }
     },
     "clone": {
@@ -4751,9 +4803,9 @@
       }
     },
     "emoji-regex": {
-      "version": "7.0.3",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/emoji-regex/-/emoji-regex-7.0.3.tgz",
-      "integrity": "sha1-kzoEBShgyF6DwSJHnEdIqOTHIVY=",
+      "version": "8.0.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/emoji-regex/-/emoji-regex-8.0.0.tgz",
+      "integrity": "sha1-6Bj9ac5cz8tARZT4QpY79TFkzDc=",
       "dev": true
     },
     "emojis-list": {
@@ -5020,6 +5072,12 @@
         "recast": "~0.11.12",
         "through": "~2.3.6"
       }
+    },
+    "escalade": {
+      "version": "3.1.1",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/escalade/-/escalade-3.1.1.tgz",
+      "integrity": "sha1-2M/ccACWXFoBdLSoLqpcBVJ0LkA=",
+      "dev": true
     },
     "escape-html": {
       "version": "1.0.3",
@@ -5692,12 +5750,12 @@
       "dev": true
     },
     "find-up": {
-      "version": "3.0.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/find-up/-/find-up-3.0.0.tgz",
-      "integrity": "sha1-SRafHXmTQwZG2mHsxa41XCHJe3M=",
+      "version": "2.1.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/find-up/-/find-up-2.1.0.tgz",
+      "integrity": "sha1-RdG35QbHF93UgndaK3eSCjwMV6c=",
       "dev": true,
       "requires": {
-        "locate-path": "^3.0.0"
+        "locate-path": "^2.0.0"
       }
     },
     "findit2": {
@@ -8348,6 +8406,49 @@
         "resolve-cwd": "^2.0.0"
       },
       "dependencies": {
+        "find-up": {
+          "version": "3.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/find-up/-/find-up-3.0.0.tgz",
+          "integrity": "sha1-SRafHXmTQwZG2mHsxa41XCHJe3M=",
+          "dev": true,
+          "requires": {
+            "locate-path": "^3.0.0"
+          }
+        },
+        "locate-path": {
+          "version": "3.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/locate-path/-/locate-path-3.0.0.tgz",
+          "integrity": "sha1-2+w7OrdZdYBxtY/ln8QYca8hQA4=",
+          "dev": true,
+          "requires": {
+            "p-locate": "^3.0.0",
+            "path-exists": "^3.0.0"
+          }
+        },
+        "p-limit": {
+          "version": "2.3.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-limit/-/p-limit-2.3.0.tgz",
+          "integrity": "sha1-PdM8ZHohT9//2DWTPrCG2g3CHbE=",
+          "dev": true,
+          "requires": {
+            "p-try": "^2.0.0"
+          }
+        },
+        "p-locate": {
+          "version": "3.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-locate/-/p-locate-3.0.0.tgz",
+          "integrity": "sha1-Mi1poFwCZLJZl9n0DNiokasAZKQ=",
+          "dev": true,
+          "requires": {
+            "p-limit": "^2.0.0"
+          }
+        },
+        "p-try": {
+          "version": "2.2.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-try/-/p-try-2.2.0.tgz",
+          "integrity": "sha1-yyhoVA4xPWHeWPr741zpAE1VQOY=",
+          "dev": true
+        },
         "pkg-dir": {
           "version": "3.0.0",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/pkg-dir/-/pkg-dir-3.0.0.tgz",
@@ -8450,9 +8551,9 @@
       }
     },
     "invert-kv": {
-      "version": "2.0.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/invert-kv/-/invert-kv-2.0.0.tgz",
-      "integrity": "sha1-c5P1r6Weyf9fZ6J2INEcIm4+7AI=",
+      "version": "1.0.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/invert-kv/-/invert-kv-1.0.0.tgz",
+      "integrity": "sha1-EEqOSqym09jNFXqO+L+rLXo//bY=",
       "dev": true
     },
     "ip": {
@@ -8639,9 +8740,9 @@
       "dev": true
     },
     "is-fullwidth-code-point": {
-      "version": "2.0.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz",
-      "integrity": "sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=",
+      "version": "3.0.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz",
+      "integrity": "sha1-8Rb4Bk/pCz94RKOJl8C3UFEmnx0=",
       "dev": true
     },
     "is-glob": {
@@ -10092,12 +10193,12 @@
       "dev": true
     },
     "lcid": {
-      "version": "2.0.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/lcid/-/lcid-2.0.0.tgz",
-      "integrity": "sha1-bvXS32DlL4LrIopMNz6NHzlyU88=",
+      "version": "1.0.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/lcid/-/lcid-1.0.0.tgz",
+      "integrity": "sha1-MIrMr6C8SDo4Z7S28rlQYlHRuDU=",
       "dev": true,
       "requires": {
-        "invert-kv": "^2.0.0"
+        "invert-kv": "^1.0.0"
       }
     },
     "lcov-parse": {
@@ -10456,12 +10557,12 @@
       }
     },
     "locate-path": {
-      "version": "3.0.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/locate-path/-/locate-path-3.0.0.tgz",
-      "integrity": "sha1-2+w7OrdZdYBxtY/ln8QYca8hQA4=",
+      "version": "2.0.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/locate-path/-/locate-path-2.0.0.tgz",
+      "integrity": "sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=",
       "dev": true,
       "requires": {
-        "p-locate": "^3.0.0",
+        "p-locate": "^2.0.0",
         "path-exists": "^3.0.0"
       }
     },
@@ -10960,15 +11061,6 @@
         "kind-of": "^6.0.2"
       }
     },
-    "map-age-cleaner": {
-      "version": "0.1.3",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/map-age-cleaner/-/map-age-cleaner-0.1.3.tgz",
-      "integrity": "sha1-fVg6cwZDTAVf5HSw9FB45uG0uSo=",
-      "dev": true,
-      "requires": {
-        "p-defer": "^1.0.0"
-      }
-    },
     "map-cache": {
       "version": "0.2.2",
       "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/map-cache/-/map-cache-0.2.2.tgz",
@@ -11032,14 +11124,20 @@
       "dev": true
     },
     "mem": {
-      "version": "4.3.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/mem/-/mem-4.3.0.tgz",
-      "integrity": "sha1-Rhr0l7xK4JYIzbLmDu+2m/90QXg=",
+      "version": "1.1.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/mem/-/mem-1.1.0.tgz",
+      "integrity": "sha1-Xt1StIXKHZAP5kiVUFOZoN+kX3Y=",
       "dev": true,
       "requires": {
-        "map-age-cleaner": "^0.1.1",
-        "mimic-fn": "^2.0.0",
-        "p-is-promise": "^2.0.0"
+        "mimic-fn": "^1.0.0"
+      },
+      "dependencies": {
+        "mimic-fn": {
+          "version": "1.2.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/mimic-fn/-/mimic-fn-1.2.0.tgz",
+          "integrity": "sha1-ggyGo5M0ZA6ZUWkovQP8qIBX0CI=",
+          "dev": true
+        }
       }
     },
     "memory-fs": {
@@ -11095,49 +11193,6 @@
         "trim-newlines": "^2.0.0"
       },
       "dependencies": {
-        "find-up": {
-          "version": "2.1.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/find-up/-/find-up-2.1.0.tgz",
-          "integrity": "sha1-RdG35QbHF93UgndaK3eSCjwMV6c=",
-          "dev": true,
-          "requires": {
-            "locate-path": "^2.0.0"
-          }
-        },
-        "locate-path": {
-          "version": "2.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/locate-path/-/locate-path-2.0.0.tgz",
-          "integrity": "sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=",
-          "dev": true,
-          "requires": {
-            "p-locate": "^2.0.0",
-            "path-exists": "^3.0.0"
-          }
-        },
-        "p-limit": {
-          "version": "1.3.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-limit/-/p-limit-1.3.0.tgz",
-          "integrity": "sha1-uGvV8MJWkJEcdZD8v8IBDVSzzLg=",
-          "dev": true,
-          "requires": {
-            "p-try": "^1.0.0"
-          }
-        },
-        "p-locate": {
-          "version": "2.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-locate/-/p-locate-2.0.0.tgz",
-          "integrity": "sha1-IKAQOyIqcMj9OcwuWAaA893l7EM=",
-          "dev": true,
-          "requires": {
-            "p-limit": "^1.1.0"
-          }
-        },
-        "p-try": {
-          "version": "1.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-try/-/p-try-1.0.0.tgz",
-          "integrity": "sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=",
-          "dev": true
-        },
         "read-pkg": {
           "version": "3.0.0",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/read-pkg/-/read-pkg-3.0.0.tgz",
@@ -12700,14 +12755,58 @@
       "dev": true
     },
     "os-locale": {
-      "version": "3.1.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/os-locale/-/os-locale-3.1.0.tgz",
-      "integrity": "sha1-qAKm7hfyTBBIOrmTVxnO9O0Wvxo=",
+      "version": "2.1.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/os-locale/-/os-locale-2.1.0.tgz",
+      "integrity": "sha1-QrwpAKa1uL0XN2yOiCtlr8zyS/I=",
       "dev": true,
       "requires": {
-        "execa": "^1.0.0",
-        "lcid": "^2.0.0",
-        "mem": "^4.0.0"
+        "execa": "^0.7.0",
+        "lcid": "^1.0.0",
+        "mem": "^1.1.0"
+      },
+      "dependencies": {
+        "cross-spawn": {
+          "version": "5.1.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/cross-spawn/-/cross-spawn-5.1.0.tgz",
+          "integrity": "sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk=",
+          "dev": true,
+          "requires": {
+            "lru-cache": "^4.0.1",
+            "shebang-command": "^1.2.0",
+            "which": "^1.2.9"
+          }
+        },
+        "execa": {
+          "version": "0.7.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/execa/-/execa-0.7.0.tgz",
+          "integrity": "sha1-lEvs00zEHuMqY6n68nrVpl/Fl3c=",
+          "dev": true,
+          "requires": {
+            "cross-spawn": "^5.0.1",
+            "get-stream": "^3.0.0",
+            "is-stream": "^1.1.0",
+            "npm-run-path": "^2.0.0",
+            "p-finally": "^1.0.0",
+            "signal-exit": "^3.0.0",
+            "strip-eof": "^1.0.0"
+          }
+        },
+        "get-stream": {
+          "version": "3.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/get-stream/-/get-stream-3.0.0.tgz",
+          "integrity": "sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ=",
+          "dev": true
+        },
+        "lru-cache": {
+          "version": "4.1.5",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/lru-cache/-/lru-cache-4.1.5.tgz",
+          "integrity": "sha1-i75Q6oW+1ZvJ4z3KuCNe6bz0Q80=",
+          "dev": true,
+          "requires": {
+            "pseudomap": "^1.0.2",
+            "yallist": "^2.1.2"
+          }
+        }
       }
     },
     "os-name": {
@@ -12742,40 +12841,28 @@
       "integrity": "sha1-ueEjgAvOu3rBOkeb4ZW1B7mNMPo=",
       "dev": true
     },
-    "p-defer": {
-      "version": "1.0.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-defer/-/p-defer-1.0.0.tgz",
-      "integrity": "sha1-n26xgvbJqozXQwBKfU+WsZaw+ww=",
-      "dev": true
-    },
     "p-finally": {
       "version": "1.0.0",
       "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-finally/-/p-finally-1.0.0.tgz",
       "integrity": "sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=",
       "dev": true
     },
-    "p-is-promise": {
-      "version": "2.1.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-is-promise/-/p-is-promise-2.1.0.tgz",
-      "integrity": "sha1-kYzrrqJIpiz3/6uOO8qMX4gvxC4=",
-      "dev": true
-    },
     "p-limit": {
-      "version": "2.3.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-limit/-/p-limit-2.3.0.tgz",
-      "integrity": "sha1-PdM8ZHohT9//2DWTPrCG2g3CHbE=",
+      "version": "1.3.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-limit/-/p-limit-1.3.0.tgz",
+      "integrity": "sha1-uGvV8MJWkJEcdZD8v8IBDVSzzLg=",
       "dev": true,
       "requires": {
-        "p-try": "^2.0.0"
+        "p-try": "^1.0.0"
       }
     },
     "p-locate": {
-      "version": "3.0.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-locate/-/p-locate-3.0.0.tgz",
-      "integrity": "sha1-Mi1poFwCZLJZl9n0DNiokasAZKQ=",
+      "version": "2.0.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-locate/-/p-locate-2.0.0.tgz",
+      "integrity": "sha1-IKAQOyIqcMj9OcwuWAaA893l7EM=",
       "dev": true,
       "requires": {
-        "p-limit": "^2.0.0"
+        "p-limit": "^1.1.0"
       }
     },
     "p-map": {
@@ -12803,9 +12890,9 @@
       }
     },
     "p-try": {
-      "version": "2.2.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-try/-/p-try-2.2.0.tgz",
-      "integrity": "sha1-yyhoVA4xPWHeWPr741zpAE1VQOY=",
+      "version": "1.0.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-try/-/p-try-1.0.0.tgz",
+      "integrity": "sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=",
       "dev": true
     },
     "pac-proxy-agent": {
@@ -13228,51 +13315,6 @@
       "dev": true,
       "requires": {
         "find-up": "^2.1.0"
-      },
-      "dependencies": {
-        "find-up": {
-          "version": "2.1.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/find-up/-/find-up-2.1.0.tgz",
-          "integrity": "sha1-RdG35QbHF93UgndaK3eSCjwMV6c=",
-          "dev": true,
-          "requires": {
-            "locate-path": "^2.0.0"
-          }
-        },
-        "locate-path": {
-          "version": "2.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/locate-path/-/locate-path-2.0.0.tgz",
-          "integrity": "sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=",
-          "dev": true,
-          "requires": {
-            "p-locate": "^2.0.0",
-            "path-exists": "^3.0.0"
-          }
-        },
-        "p-limit": {
-          "version": "1.3.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-limit/-/p-limit-1.3.0.tgz",
-          "integrity": "sha1-uGvV8MJWkJEcdZD8v8IBDVSzzLg=",
-          "dev": true,
-          "requires": {
-            "p-try": "^1.0.0"
-          }
-        },
-        "p-locate": {
-          "version": "2.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-locate/-/p-locate-2.0.0.tgz",
-          "integrity": "sha1-IKAQOyIqcMj9OcwuWAaA893l7EM=",
-          "dev": true,
-          "requires": {
-            "p-limit": "^1.1.0"
-          }
-        },
-        "p-try": {
-          "version": "1.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-try/-/p-try-1.0.0.tgz",
-          "integrity": "sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=",
-          "dev": true
-        }
       }
     },
     "plugin-error": {
@@ -17189,6 +17231,12 @@
             "color-convert": "^1.9.0"
           }
         },
+        "camelcase": {
+          "version": "5.3.1",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/camelcase/-/camelcase-5.3.1.tgz",
+          "integrity": "sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=",
+          "dev": true
+        },
         "cliui": {
           "version": "5.0.0",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/cliui/-/cliui-5.0.0.tgz",
@@ -17215,6 +17263,72 @@
           "integrity": "sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=",
           "dev": true
         },
+        "emoji-regex": {
+          "version": "7.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/emoji-regex/-/emoji-regex-7.0.3.tgz",
+          "integrity": "sha1-kzoEBShgyF6DwSJHnEdIqOTHIVY=",
+          "dev": true
+        },
+        "find-up": {
+          "version": "3.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/find-up/-/find-up-3.0.0.tgz",
+          "integrity": "sha1-SRafHXmTQwZG2mHsxa41XCHJe3M=",
+          "dev": true,
+          "requires": {
+            "locate-path": "^3.0.0"
+          }
+        },
+        "is-fullwidth-code-point": {
+          "version": "2.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz",
+          "integrity": "sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=",
+          "dev": true
+        },
+        "locate-path": {
+          "version": "3.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/locate-path/-/locate-path-3.0.0.tgz",
+          "integrity": "sha1-2+w7OrdZdYBxtY/ln8QYca8hQA4=",
+          "dev": true,
+          "requires": {
+            "p-locate": "^3.0.0",
+            "path-exists": "^3.0.0"
+          }
+        },
+        "p-limit": {
+          "version": "2.3.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-limit/-/p-limit-2.3.0.tgz",
+          "integrity": "sha1-PdM8ZHohT9//2DWTPrCG2g3CHbE=",
+          "dev": true,
+          "requires": {
+            "p-try": "^2.0.0"
+          }
+        },
+        "p-locate": {
+          "version": "3.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-locate/-/p-locate-3.0.0.tgz",
+          "integrity": "sha1-Mi1poFwCZLJZl9n0DNiokasAZKQ=",
+          "dev": true,
+          "requires": {
+            "p-limit": "^2.0.0"
+          }
+        },
+        "p-try": {
+          "version": "2.2.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-try/-/p-try-2.2.0.tgz",
+          "integrity": "sha1-yyhoVA4xPWHeWPr741zpAE1VQOY=",
+          "dev": true
+        },
+        "string-width": {
+          "version": "3.1.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/string-width/-/string-width-3.1.0.tgz",
+          "integrity": "sha1-InZ74htirxCBV0MG9prFG2IgOWE=",
+          "dev": true,
+          "requires": {
+            "emoji-regex": "^7.0.1",
+            "is-fullwidth-code-point": "^2.0.0",
+            "strip-ansi": "^5.1.0"
+          }
+        },
         "strip-ansi": {
           "version": "5.2.0",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/strip-ansi/-/strip-ansi-5.2.0.tgz",
@@ -17235,6 +17349,12 @@
             "strip-ansi": "^5.0.0"
           }
         },
+        "y18n": {
+          "version": "4.0.1",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/y18n/-/y18n-4.0.1.tgz",
+          "integrity": "sha1-jbK4PDHF11CZu4kLI/MJSJHiR9Q=",
+          "dev": true
+        },
         "yargs": {
           "version": "13.3.2",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/yargs/-/yargs-13.3.2.tgz",
@@ -17251,6 +17371,16 @@
             "which-module": "^2.0.0",
             "y18n": "^4.0.0",
             "yargs-parser": "^13.1.2"
+          }
+        },
+        "yargs-parser": {
+          "version": "13.1.2",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/yargs-parser/-/yargs-parser-13.1.2.tgz",
+          "integrity": "sha1-Ew8JcC667vJlDVTObj5XBvek+zg=",
+          "dev": true,
+          "requires": {
+            "camelcase": "^5.0.0",
+            "decamelize": "^1.2.0"
           }
         }
       }
@@ -18571,31 +18701,14 @@
       "dev": true
     },
     "string-width": {
-      "version": "3.1.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/string-width/-/string-width-3.1.0.tgz",
-      "integrity": "sha1-InZ74htirxCBV0MG9prFG2IgOWE=",
+      "version": "4.2.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/string-width/-/string-width-4.2.0.tgz",
+      "integrity": "sha1-lSGCxGzHssMT0VluYjmSvRY7crU=",
       "dev": true,
       "requires": {
-        "emoji-regex": "^7.0.1",
-        "is-fullwidth-code-point": "^2.0.0",
-        "strip-ansi": "^5.1.0"
-      },
-      "dependencies": {
-        "ansi-regex": {
-          "version": "4.1.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/ansi-regex/-/ansi-regex-4.1.0.tgz",
-          "integrity": "sha1-i5+PCM8ay4Q3Vqg5yox+MWjFGZc=",
-          "dev": true
-        },
-        "strip-ansi": {
-          "version": "5.2.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/strip-ansi/-/strip-ansi-5.2.0.tgz",
-          "integrity": "sha1-jJpTb+tq/JYr36WxBKUJHBrZwK4=",
-          "dev": true,
-          "requires": {
-            "ansi-regex": "^4.1.0"
-          }
-        }
+        "emoji-regex": "^8.0.0",
+        "is-fullwidth-code-point": "^3.0.0",
+        "strip-ansi": "^6.0.0"
       }
     },
     "string.prototype.trimend": {
@@ -19340,9 +19453,9 @@
       "dev": true
     },
     "typescript": {
-      "version": "3.7.5",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/typescript/-/typescript-3.7.5.tgz",
-      "integrity": "sha1-BpLiH2X9QQi5MwI4qsEd0uF3oa4=",
+      "version": "4.0.5",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/typescript/-/typescript-4.0.5.tgz",
+      "integrity": "sha1-rp3d/RBp8ctb6z7zshcN18EzI4k=",
       "dev": true
     },
     "uglify-js": {
@@ -20432,6 +20545,12 @@
             "to-regex": "^3.0.1"
           }
         },
+        "camelcase": {
+          "version": "5.3.1",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/camelcase/-/camelcase-5.3.1.tgz",
+          "integrity": "sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=",
+          "dev": true
+        },
         "chokidar": {
           "version": "2.1.8",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/chokidar/-/chokidar-2.1.8.tgz",
@@ -20519,6 +20638,12 @@
             "rimraf": "^2.6.3"
           }
         },
+        "emoji-regex": {
+          "version": "7.0.3",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/emoji-regex/-/emoji-regex-7.0.3.tgz",
+          "integrity": "sha1-kzoEBShgyF6DwSJHnEdIqOTHIVY=",
+          "dev": true
+        },
         "extend-shallow": {
           "version": "2.0.1",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/extend-shallow/-/extend-shallow-2.0.1.tgz",
@@ -20538,6 +20663,15 @@
             "is-number": "^3.0.0",
             "repeat-string": "^1.6.1",
             "to-regex-range": "^2.1.0"
+          }
+        },
+        "find-up": {
+          "version": "3.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/find-up/-/find-up-3.0.0.tgz",
+          "integrity": "sha1-SRafHXmTQwZG2mHsxa41XCHJe3M=",
+          "dev": true,
+          "requires": {
+            "locate-path": "^3.0.0"
           }
         },
         "fsevents": {
@@ -20613,6 +20747,12 @@
             "binary-extensions": "^1.0.0"
           }
         },
+        "is-fullwidth-code-point": {
+          "version": "2.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz",
+          "integrity": "sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=",
+          "dev": true
+        },
         "is-number": {
           "version": "3.0.0",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/is-number/-/is-number-3.0.0.tgz",
@@ -20655,6 +20795,16 @@
             "is-buffer": "^1.1.5"
           }
         },
+        "locate-path": {
+          "version": "3.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/locate-path/-/locate-path-3.0.0.tgz",
+          "integrity": "sha1-2+w7OrdZdYBxtY/ln8QYca8hQA4=",
+          "dev": true,
+          "requires": {
+            "p-locate": "^3.0.0",
+            "path-exists": "^3.0.0"
+          }
+        },
         "memory-fs": {
           "version": "0.4.1",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/memory-fs/-/memory-fs-0.4.1.tgz",
@@ -20686,10 +20836,34 @@
             "is-wsl": "^1.1.0"
           }
         },
+        "p-limit": {
+          "version": "2.3.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-limit/-/p-limit-2.3.0.tgz",
+          "integrity": "sha1-PdM8ZHohT9//2DWTPrCG2g3CHbE=",
+          "dev": true,
+          "requires": {
+            "p-try": "^2.0.0"
+          }
+        },
+        "p-locate": {
+          "version": "3.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-locate/-/p-locate-3.0.0.tgz",
+          "integrity": "sha1-Mi1poFwCZLJZl9n0DNiokasAZKQ=",
+          "dev": true,
+          "requires": {
+            "p-limit": "^2.0.0"
+          }
+        },
         "p-map": {
           "version": "2.1.0",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-map/-/p-map-2.1.0.tgz",
           "integrity": "sha1-MQko/u+cnsxltosXaTAYpmXOoXU=",
+          "dev": true
+        },
+        "p-try": {
+          "version": "2.2.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-try/-/p-try-2.2.0.tgz",
+          "integrity": "sha1-yyhoVA4xPWHeWPr741zpAE1VQOY=",
           "dev": true
         },
         "pify": {
@@ -20733,6 +20907,34 @@
             "ajv": "^6.1.0",
             "ajv-errors": "^1.0.0",
             "ajv-keywords": "^3.1.0"
+          }
+        },
+        "string-width": {
+          "version": "3.1.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/string-width/-/string-width-3.1.0.tgz",
+          "integrity": "sha1-InZ74htirxCBV0MG9prFG2IgOWE=",
+          "dev": true,
+          "requires": {
+            "emoji-regex": "^7.0.1",
+            "is-fullwidth-code-point": "^2.0.0",
+            "strip-ansi": "^5.1.0"
+          },
+          "dependencies": {
+            "ansi-regex": {
+              "version": "4.1.0",
+              "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/ansi-regex/-/ansi-regex-4.1.0.tgz",
+              "integrity": "sha1-i5+PCM8ay4Q3Vqg5yox+MWjFGZc=",
+              "dev": true
+            },
+            "strip-ansi": {
+              "version": "5.2.0",
+              "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/strip-ansi/-/strip-ansi-5.2.0.tgz",
+              "integrity": "sha1-jJpTb+tq/JYr36WxBKUJHBrZwK4=",
+              "dev": true,
+              "requires": {
+                "ansi-regex": "^4.1.0"
+              }
+            }
           }
         },
         "string_decoder": {
@@ -20832,6 +21034,12 @@
             "async-limiter": "~1.0.0"
           }
         },
+        "y18n": {
+          "version": "4.0.1",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/y18n/-/y18n-4.0.1.tgz",
+          "integrity": "sha1-jbK4PDHF11CZu4kLI/MJSJHiR9Q=",
+          "dev": true
+        },
         "yargs": {
           "version": "13.3.2",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/yargs/-/yargs-13.3.2.tgz",
@@ -20848,6 +21056,16 @@
             "which-module": "^2.0.0",
             "y18n": "^4.0.0",
             "yargs-parser": "^13.1.2"
+          }
+        },
+        "yargs-parser": {
+          "version": "13.1.2",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/yargs-parser/-/yargs-parser-13.1.2.tgz",
+          "integrity": "sha1-Ew8JcC667vJlDVTObj5XBvek+zg=",
+          "dev": true,
+          "requires": {
+            "camelcase": "^5.0.0",
+            "decamelize": "^1.2.0"
           }
         }
       }
@@ -21003,6 +21221,12 @@
           "integrity": "sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=",
           "dev": true
         },
+        "is-fullwidth-code-point": {
+          "version": "2.0.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz",
+          "integrity": "sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=",
+          "dev": true
+        },
         "string-width": {
           "version": "2.1.1",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/string-width/-/string-width-2.1.1.tgz",
@@ -21062,50 +21286,14 @@
       }
     },
     "wrap-ansi": {
-      "version": "2.1.0",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/wrap-ansi/-/wrap-ansi-2.1.0.tgz",
-      "integrity": "sha1-2Pw9KE3QV5T+hJc8rs3Rz4JP3YU=",
+      "version": "7.0.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/wrap-ansi/-/wrap-ansi-7.0.0.tgz",
+      "integrity": "sha1-Z+FFz/UQpqaYS98RUpEdadLrnkM=",
       "dev": true,
       "requires": {
-        "string-width": "^1.0.1",
-        "strip-ansi": "^3.0.1"
-      },
-      "dependencies": {
-        "ansi-regex": {
-          "version": "2.1.1",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/ansi-regex/-/ansi-regex-2.1.1.tgz",
-          "integrity": "sha1-w7M6te42DYbg5ijwRorn7yfWVN8=",
-          "dev": true
-        },
-        "is-fullwidth-code-point": {
-          "version": "1.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz",
-          "integrity": "sha1-754xOG8DGn8NZDr4L95QxFfvAMs=",
-          "dev": true,
-          "requires": {
-            "number-is-nan": "^1.0.0"
-          }
-        },
-        "string-width": {
-          "version": "1.0.2",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/string-width/-/string-width-1.0.2.tgz",
-          "integrity": "sha1-EYvfW4zcUaKn5w0hHgfisLmxB9M=",
-          "dev": true,
-          "requires": {
-            "code-point-at": "^1.0.0",
-            "is-fullwidth-code-point": "^1.0.0",
-            "strip-ansi": "^3.0.0"
-          }
-        },
-        "strip-ansi": {
-          "version": "3.0.1",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/strip-ansi/-/strip-ansi-3.0.1.tgz",
-          "integrity": "sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=",
-          "dev": true,
-          "requires": {
-            "ansi-regex": "^2.0.0"
-          }
-        }
+        "ansi-styles": "^4.0.0",
+        "string-width": "^4.1.0",
+        "strip-ansi": "^6.0.0"
       }
     },
     "wrappy": {
@@ -21126,9 +21314,9 @@
       }
     },
     "xhr2": {
-      "version": "0.1.4",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/xhr2/-/xhr2-0.1.4.tgz",
-      "integrity": "sha1-f4dliEdxbbUCYyOBL4GMras4el8=",
+      "version": "0.2.0",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/xhr2/-/xhr2-0.2.0.tgz",
+      "integrity": "sha1-7d7/eC87dVEGG411ZFCFJpOW5SE=",
       "dev": true
     },
     "xmldoc": {
@@ -21160,9 +21348,9 @@
       "dev": true
     },
     "y18n": {
-      "version": "4.0.1",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/y18n/-/y18n-4.0.1.tgz",
-      "integrity": "sha1-jbK4PDHF11CZu4kLI/MJSJHiR9Q=",
+      "version": "5.0.5",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/y18n/-/y18n-5.0.5.tgz",
+      "integrity": "sha1-h2nsCNA7HqLfJQCs71YXQ7u5qxg=",
       "dev": true
     },
     "yaku": {
@@ -21203,45 +21391,15 @@
           "integrity": "sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=",
           "dev": true
         },
-        "camelcase": {
+        "cliui": {
           "version": "4.1.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/camelcase/-/camelcase-4.1.0.tgz",
-          "integrity": "sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=",
-          "dev": true
-        },
-        "cross-spawn": {
-          "version": "5.1.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/cross-spawn/-/cross-spawn-5.1.0.tgz",
-          "integrity": "sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk=",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/cliui/-/cliui-4.1.0.tgz",
+          "integrity": "sha1-NIQi2+gtgAswIu709qwQvy5NG0k=",
           "dev": true,
           "requires": {
-            "lru-cache": "^4.0.1",
-            "shebang-command": "^1.2.0",
-            "which": "^1.2.9"
-          }
-        },
-        "execa": {
-          "version": "0.7.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/execa/-/execa-0.7.0.tgz",
-          "integrity": "sha1-lEvs00zEHuMqY6n68nrVpl/Fl3c=",
-          "dev": true,
-          "requires": {
-            "cross-spawn": "^5.0.1",
-            "get-stream": "^3.0.0",
-            "is-stream": "^1.1.0",
-            "npm-run-path": "^2.0.0",
-            "p-finally": "^1.0.0",
-            "signal-exit": "^3.0.0",
-            "strip-eof": "^1.0.0"
-          }
-        },
-        "find-up": {
-          "version": "2.1.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/find-up/-/find-up-2.1.0.tgz",
-          "integrity": "sha1-RdG35QbHF93UgndaK3eSCjwMV6c=",
-          "dev": true,
-          "requires": {
-            "locate-path": "^2.0.0"
+            "string-width": "^2.1.1",
+            "strip-ansi": "^4.0.0",
+            "wrap-ansi": "^2.0.0"
           }
         },
         "get-caller-file": {
@@ -21250,95 +21408,10 @@
           "integrity": "sha1-+Xj6TJDR3+f/LWvtoqUV5xO9z0o=",
           "dev": true
         },
-        "get-stream": {
-          "version": "3.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/get-stream/-/get-stream-3.0.0.tgz",
-          "integrity": "sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ=",
-          "dev": true
-        },
-        "invert-kv": {
-          "version": "1.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/invert-kv/-/invert-kv-1.0.0.tgz",
-          "integrity": "sha1-EEqOSqym09jNFXqO+L+rLXo//bY=",
-          "dev": true
-        },
-        "lcid": {
-          "version": "1.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/lcid/-/lcid-1.0.0.tgz",
-          "integrity": "sha1-MIrMr6C8SDo4Z7S28rlQYlHRuDU=",
-          "dev": true,
-          "requires": {
-            "invert-kv": "^1.0.0"
-          }
-        },
-        "locate-path": {
+        "is-fullwidth-code-point": {
           "version": "2.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/locate-path/-/locate-path-2.0.0.tgz",
-          "integrity": "sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=",
-          "dev": true,
-          "requires": {
-            "p-locate": "^2.0.0",
-            "path-exists": "^3.0.0"
-          }
-        },
-        "lru-cache": {
-          "version": "4.1.5",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/lru-cache/-/lru-cache-4.1.5.tgz",
-          "integrity": "sha1-i75Q6oW+1ZvJ4z3KuCNe6bz0Q80=",
-          "dev": true,
-          "requires": {
-            "pseudomap": "^1.0.2",
-            "yallist": "^2.1.2"
-          }
-        },
-        "mem": {
-          "version": "1.1.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/mem/-/mem-1.1.0.tgz",
-          "integrity": "sha1-Xt1StIXKHZAP5kiVUFOZoN+kX3Y=",
-          "dev": true,
-          "requires": {
-            "mimic-fn": "^1.0.0"
-          }
-        },
-        "mimic-fn": {
-          "version": "1.2.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/mimic-fn/-/mimic-fn-1.2.0.tgz",
-          "integrity": "sha1-ggyGo5M0ZA6ZUWkovQP8qIBX0CI=",
-          "dev": true
-        },
-        "os-locale": {
-          "version": "2.1.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/os-locale/-/os-locale-2.1.0.tgz",
-          "integrity": "sha1-QrwpAKa1uL0XN2yOiCtlr8zyS/I=",
-          "dev": true,
-          "requires": {
-            "execa": "^0.7.0",
-            "lcid": "^1.0.0",
-            "mem": "^1.1.0"
-          }
-        },
-        "p-limit": {
-          "version": "1.3.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-limit/-/p-limit-1.3.0.tgz",
-          "integrity": "sha1-uGvV8MJWkJEcdZD8v8IBDVSzzLg=",
-          "dev": true,
-          "requires": {
-            "p-try": "^1.0.0"
-          }
-        },
-        "p-locate": {
-          "version": "2.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-locate/-/p-locate-2.0.0.tgz",
-          "integrity": "sha1-IKAQOyIqcMj9OcwuWAaA893l7EM=",
-          "dev": true,
-          "requires": {
-            "p-limit": "^1.1.0"
-          }
-        },
-        "p-try": {
-          "version": "1.0.0",
-          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/p-try/-/p-try-1.0.0.tgz",
-          "integrity": "sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz",
+          "integrity": "sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=",
           "dev": true
         },
         "require-main-filename": {
@@ -21366,6 +21439,53 @@
             "ansi-regex": "^3.0.0"
           }
         },
+        "wrap-ansi": {
+          "version": "2.1.0",
+          "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/wrap-ansi/-/wrap-ansi-2.1.0.tgz",
+          "integrity": "sha1-2Pw9KE3QV5T+hJc8rs3Rz4JP3YU=",
+          "dev": true,
+          "requires": {
+            "string-width": "^1.0.1",
+            "strip-ansi": "^3.0.1"
+          },
+          "dependencies": {
+            "ansi-regex": {
+              "version": "2.1.1",
+              "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/ansi-regex/-/ansi-regex-2.1.1.tgz",
+              "integrity": "sha1-w7M6te42DYbg5ijwRorn7yfWVN8=",
+              "dev": true
+            },
+            "is-fullwidth-code-point": {
+              "version": "1.0.0",
+              "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz",
+              "integrity": "sha1-754xOG8DGn8NZDr4L95QxFfvAMs=",
+              "dev": true,
+              "requires": {
+                "number-is-nan": "^1.0.0"
+              }
+            },
+            "string-width": {
+              "version": "1.0.2",
+              "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/string-width/-/string-width-1.0.2.tgz",
+              "integrity": "sha1-EYvfW4zcUaKn5w0hHgfisLmxB9M=",
+              "dev": true,
+              "requires": {
+                "code-point-at": "^1.0.0",
+                "is-fullwidth-code-point": "^1.0.0",
+                "strip-ansi": "^3.0.0"
+              }
+            },
+            "strip-ansi": {
+              "version": "3.0.1",
+              "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/strip-ansi/-/strip-ansi-3.0.1.tgz",
+              "integrity": "sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=",
+              "dev": true,
+              "requires": {
+                "ansi-regex": "^2.0.0"
+              }
+            }
+          }
+        },
         "y18n": {
           "version": "3.2.1",
           "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/y18n/-/y18n-3.2.1.tgz",
@@ -21384,14 +21504,10 @@
       }
     },
     "yargs-parser": {
-      "version": "13.1.2",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/yargs-parser/-/yargs-parser-13.1.2.tgz",
-      "integrity": "sha1-Ew8JcC667vJlDVTObj5XBvek+zg=",
-      "dev": true,
-      "requires": {
-        "camelcase": "^5.0.0",
-        "decamelize": "^1.2.0"
-      }
+      "version": "20.2.4",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/yargs-parser/-/yargs-parser-20.2.4.tgz",
+      "integrity": "sha1-tCiQ8UVmeW+Fro46JSkNIF8VSlQ=",
+      "dev": true
     },
     "yeast": {
       "version": "0.1.2",
@@ -21400,9 +21516,9 @@
       "dev": true
     },
     "zone.js": {
-      "version": "0.10.2",
-      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/zone.js/-/zone.js-0.10.2.tgz",
-      "integrity": "sha1-Z8oISzEW/DP8QENeDV6kCiB+OS4=",
+      "version": "0.10.3",
+      "resolved": "https://pkgs.dev.azure.com/surgentit/_packaging/surgent-feed/npm/registry/zone.js/-/zone.js-0.10.3.tgz",
+      "integrity": "sha1-Pl5NoDxgfJ3NkuN901aHoUoUDBY=",
       "dev": true
     }
   }
