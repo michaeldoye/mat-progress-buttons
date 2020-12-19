@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { MatBarButtonComponent } from './bar-button.component';
 import { MatProgressButtonsModule } from '../../mat-progress-buttons.module';
 
@@ -6,7 +6,7 @@ describe('MatBarButtonComponent', () => {
   let component: MatBarButtonComponent;
   let fixture: ComponentFixture<MatBarButtonComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [MatProgressButtonsModule]
     }).compileComponents();
