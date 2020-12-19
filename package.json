@@ -27,9 +27,6 @@
     "demo": " gulp build:demo",
     "check-travis": " travis-status --repo=michaeldoye/mat-progress-buttons --branch=master --fail-pending || echo 'Not yet passing'"
   },
-  "resolutions": {
-    "graceful-fs": "^4.2.4"
-  },
   "dependencies": {
     "@angular/cdk": "^11.0.3",
     "@angular/common": "~11.0.5",
