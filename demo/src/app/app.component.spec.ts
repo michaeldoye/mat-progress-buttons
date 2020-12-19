@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 import { Router } from '@angular/router';
 import { Component } from '@angular/core';
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
@@ -16,7 +16,7 @@ class RouterStub {
 }
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
@@ -30,7 +30,7 @@ describe('AppComponent', () => {
     });
   }));
 
-  it('should create', async(() => {
+  it('should create', waitForAsync(() => {
     let fixture = TestBed.createComponent(AppComponent);
     let app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();

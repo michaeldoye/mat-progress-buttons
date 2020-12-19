@@ -14,7 +14,6 @@
 View all the directives in action at https://mat-progress-buttons.firebaseapp.com
 
 StackBlitz demo https://stackblitz.com/edit/mat-progress-buttons-demo
-
 ## Dependencies
 * [Angular](https://angular.io) (*requires* Angular 2 or higher, tested with 2.0.0)
 * [Angular Material](https://material.angular.io/)
@@ -241,7 +240,14 @@ $ git clone https://github.com/michaeldoye/mat-progress-buttons.git
 - link the **mat-progress-buttons** package
 
 ```bash
-$ gulp link
+$ ng build
+$ npm link ./dist/mat-progress-buttons
+```
+or
+```bash
+$ ng build
+$ npm link ./dist/mat-progress-buttons
+$ ng build --watch
 ```
 
 - navigate to the demo app directory
@@ -271,8 +277,9 @@ $ ng serve --open
 
 1. clone this [repo](https://github.com/michaeldoye/mat-progress-buttons.git)
 2. Install the dependencies by running `npm i`
-3. build the library `npm run start` or `gulp build`
-4. Link the library `gulp link`
+3. build the library `ng buld`
+3. test the library `ng test`
+4. Link the library `npm link --watch`
  5. Navigate to the demo app's directory
   - `cd demo`
   _ `npm i`
