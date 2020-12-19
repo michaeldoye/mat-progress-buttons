@@ -1,0 +1,50 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "mat-progress-buttons": {
+      "projectType": "library",
+      "root": "projects/mat-progress-buttons",
+      "sourceRoot": "projects/mat-progress-buttons/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/mat-progress-buttons/tsconfig.lib.json",
+            "project": "projects/mat-progress-buttons/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mat-progress-buttons/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mat-progress-buttons/src/test.ts",
+            "tsConfig": "projects/mat-progress-buttons/tsconfig.spec.json",
+            "karmaConfig": "projects/mat-progress-buttons/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mat-progress-buttons/tsconfig.lib.json",
+              "projects/mat-progress-buttons/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "cli": {
+    "analytics": false
+  },
+  "defaultProject": "mat-progress-buttons"
+}

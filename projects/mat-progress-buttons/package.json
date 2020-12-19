@@ -1,0 +1,51 @@
+{
+  "name": "mat-progress-buttons",
+  "description": "Material Design Progress Buttons",
+  "version": "9.2.0",
+  "homepage": "https://github.com/michaeldoye/mat-progress-buttons",
+  "author": {
+    "name": "Michael Doye",
+    "url": "https://github.com/michaeldoye"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/michaeldoye/mat-progress-buttons.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "material design"
+  ],
+  "bugs": {
+    "url": "https://github.com/michaeldoye/mat-progress-buttons/issues"
+  },
+  "private": true,
+  "peerDependencies": {
+    "@angular/common": "^11.0.5",
+    "@angular/core": "^11.0.5",
+    "@angular/cdk": "^11.0.3",
+    "@angular/material": "^11.0.3"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "commitplease": {
+    "style": "angular",
+    "types": [
+      "feat",
+      "fix",
+      "docs",
+      "style",
+      "refactor",
+      "perf",
+      "test",
+      "chore",
+      "revert",
+      "demo"
+    ],
+    "scope": "\\S+.*"
+  }
+}
