@@ -25,17 +25,21 @@
     "test": "gulp test",
     "link": "gulp link",
     "demo": " gulp build:demo",
-    "check-travis": " travis-status --repo=michaeldoye/mat-progress-buttons --branch=master --fail-pending || echo 'Not yet passing'"
+    "check-travis": " travis-status --repo=michaeldoye/mat-progress-buttons --branch=master --fail-pending || echo 'Not yet passing'",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   },
   "dependencies": {
-    "@angular/cdk": "^9.1.1",
+    "@angular/cdk": "^10.2.7",
     "@angular/common": "~10.2.4",
     "@angular/core": "~10.2.4",
-    "@angular/material": "^9.1.1",
+    "@angular/material": "^10.2.7",
     "tslib": "^1.11.1"
   },
   "devDependencies": {
-    "@angular-devkit/schematics": "^9.0.5",
+    "@angular-devkit/schematics": "^10.2.0",
     "@angular/animations": "^10.2.4",
     "@angular/compiler": "~10.2.4",
     "@angular/compiler-cli": "~10.2.4",
