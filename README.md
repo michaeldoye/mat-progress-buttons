@@ -279,7 +279,7 @@ $ ng serve --open
 2. Install the dependencies by running `npm i`
 3. build the library `ng buld`
 3. test the library `ng test`
-4. Link the library `npm link --watch`
+4. Link the library `npm link`
  5. Navigate to the demo app's directory
   - `cd demo`
   _ `npm i`
