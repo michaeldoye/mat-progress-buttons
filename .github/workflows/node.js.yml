@@ -51,5 +51,7 @@ jobs:
       uses: JS-DevTools/npm-publish@v1
       with:
         package: dist/mat-progress-buttons/package.json
+        access: restricted
+        dry-run: true
         token: ${{ secrets.NPM_TOKEN }}
    
