@@ -271,7 +271,7 @@ $ ng serve --open
 
 1. clone this [repo](https://github.com/michaeldoye/mat-progress-buttons.git)
 2. Install the dependencies by running `npm i`
-3. build the library `npm run build` or `gulp build`
+3. build the library `npm run start` or `gulp build`
 4. Link the library `gulp link`
  5. Navigate to the demo app's directory
   - `cd demo`
