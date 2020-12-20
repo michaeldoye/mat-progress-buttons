@@ -175,7 +175,7 @@ export class HomeComponent implements OnInit {
   };
 
   spinnerButtonOptions4: MatProgressButtonOptions = {
-    active: true,
+    active: false,
     text: 'Fab',
     spinnerSize: 19,
     raised: false,

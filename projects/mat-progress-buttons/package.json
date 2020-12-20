@@ -19,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/michaeldoye/mat-progress-buttons/issues"
   },
-  "private": false,
   "peerDependencies": {
     "@angular/common": "^11.0.5",
     "@angular/core": "^11.0.5",
