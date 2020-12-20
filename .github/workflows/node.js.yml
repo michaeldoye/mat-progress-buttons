@@ -46,13 +46,10 @@ jobs:
         path: dist
 
     - name: Bump Version
-      uses: phips28/gh-action-bump-version@v8.0.18
+      uses: Instrument/github-tag-action@v1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag-prefix: 'v'
-        target-branch: 'master'
-        PACKAGEJSON_DIR: 'projects/mat-progress-buttons'
+        BRANCH: release*
 
     - name: NPM Publish
       uses: JS-DevTools/npm-publish@v1
