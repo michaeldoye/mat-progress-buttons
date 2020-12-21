@@ -46,7 +46,7 @@ jobs:
       id: version-bump
       uses: "phips28/gh-action-bump-version@master"
       with:
-        tag-prefix: 'v'
+        tag-prefix: ''
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PACKAGEJSON_DIR:  'projects/mat-progress-buttons'
