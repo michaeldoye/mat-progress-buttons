@@ -5,16 +5,13 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ release* ]
+    branches:
+      - "master"
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -46,10 +43,13 @@ jobs:
         path: dist
 
     - name: Bump Version
-      uses: Instrument/github-tag-action@v1.0
+      id: version-bump
+      uses: "phips28/gh-action-bump-version@master"
+      with:
+        tag-prefix: 'v'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: release*
+        PACKAGEJSON_DIR:  'projects/mat-progress-buttons'
 
     - name: NPM Publish
       uses: JS-DevTools/npm-publish@v1
