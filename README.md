@@ -226,7 +226,7 @@ TS:
 })
 ```
 
-**Note**: Bar Button does not suppor the `fab` style, currently. Hope to have something like [this](https://codepen.io/DevVersion/pen/vGebGB) soon.
+**Note**: Bar Button doesn't support the `fab` style, currently. Hope to have something like [this](https://codepen.io/DevVersion/pen/vGebGB) soon.
 
 <a name="run-demo-app-locally"/>
 
