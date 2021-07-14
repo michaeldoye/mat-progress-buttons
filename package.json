@@ -24,10 +24,10 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.1",
-    "@angular/cdk": "^11.0.3",
+    "@angular/cdk": "^12.1.1",
     "@angular/cli": "~12.1.1",
     "@angular/compiler-cli": "~12.1.2",
-    "@angular/material": "^11.0.3",
+    "@angular/material": "^12.1.1",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
