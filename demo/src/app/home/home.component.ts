@@ -15,13 +15,12 @@ export class HomeComponent implements OnInit {
 
   @Component({
     selector: 'app-home',
-    template: '<mat-spinner-button (btnClick)="btnClick()" [options]="btnOpts"></mat-spinner-button>'
+    template: '<mat-spinner-button (btnClick)="btnClick()" [options]="btnOpts" [active]="btnState"></mat-spinner-button>'
   })
   export class SomeComponent {
 
     // Button Options
     btnOpts: MatProgressButtonOptions = {
-      active: false,
       text: 'Stroked Button',
       spinnerSize: 19,
       raised: false,
@@ -46,11 +45,13 @@ export class HomeComponent implements OnInit {
       }
     };
 
+    btnState: boolean = false;
+
     // Click handler
     btnClick(): void {
-      this.btnOpts = { ...this.btnOpts, active: true };
+      this.btnState = true;
       setTimeout(() => {
-        this.btnOpts = { ...this.btnOpts, active: false };
+        this.btnState = false;
       }, 3350);
     }
   }`;
@@ -66,8 +67,30 @@ export class HomeComponent implements OnInit {
     disabled: boolean,
     customClass: 'some-class',
     mode: string`;
-  activeCode = `   [active]="active$ | async"`;
-  disabledCode = `   [disabled]="disabled$ | async"`;
+  activeCode = `[active]="active$ | async"`;
+  disabledCode = `[disabled]="disabled$ | async"`;
+  globalOpts = `
+   const button1: MatProgressButtonOptions = {
+    id: 'button1', // Id should match the [buttonId] input
+    ...
+  };
+
+  const button2: MatProgressButtonOptions = {
+    id: 'button2', // Id should match the [buttonId] input
+    ...
+  };
+
+  @NgModule({
+    imports: [
+      MatProgressButtonsModule.forRoot([button1, button2]),
+    ],
+    declarations: [HomeComponent],
+  })`;
+  globalOptsHtml = `<mat-bar-button
+    (btnClick)="someFunc3()"
+    [buttonId]="'button1'"
+    [active]="buttonState">
+  </mat-bar-button>`;
   raisedCode = `  import { Component } from '@angular/core';
   import { MatProgressButtonOptions } from 'mat-progress-buttons';
 
@@ -79,7 +102,6 @@ export class HomeComponent implements OnInit {
 
     // Button Options
     btnOpts: MatProgressButtonOptions = {
-      active: false,
       text: 'Stroked Button',
       buttonColor: 'accent',
       barColor: 'accent',
@@ -198,6 +220,8 @@ export class HomeComponent implements OnInit {
     text: 'Stroked Button',
   };
 
+  barButtonOptionsActiveState = false;
+
   barButtonOptions1: MatProgressButtonOptions = {
     text: 'Raised Button',
   };
@@ -259,9 +283,9 @@ export class HomeComponent implements OnInit {
   }
 
   someFunc3(): void {
-    this.barButtonOptions = { ...this.barButtonOptions, active: true };
+    this.barButtonOptionsActiveState = true;
     setTimeout(() => {
-      this.barButtonOptions = { ...this.barButtonOptions, active: false };
+      this.barButtonOptionsActiveState = false;
     }, 3350);
   }
 

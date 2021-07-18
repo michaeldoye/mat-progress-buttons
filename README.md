@@ -235,10 +235,10 @@ const button2: MatProgressButtonOptions = {
 <mat-bar-button
   (btnClick)="someFunc3()"
   [buttonId]="'button1'"
-  [options]="barButtonOptions"
+  [active]="buttonState"
 ></mat-bar-button>
 ```
-`[options]` on the component will override Global Options provided in `forRoot`
+`[options]` will override Global Options provided in `forRoot`
 
 ### Overriding default CSS
 

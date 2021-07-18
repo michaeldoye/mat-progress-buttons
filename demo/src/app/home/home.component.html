@@ -105,6 +105,16 @@
               unsubscribe to the disabled state in the component.
             </p>
             <pre><code [highlight]="disabledCode" language="['typescript']"></code></pre>
+            <p><strong>Global Options</strong></p>
+            <p>
+              Optionally pass default `MatProgressButtonOptions` in `forRoot` in side
+              your app.modlue.ts for each button as an array.
+            </p>
+            <pre><code [highlight]="globalOpts" language="['typescript']"></code></pre>
+            <pre><code [highlight]="globalOptsHtml" language="['html']"></code></pre>
+            <p>
+              [options] will override Global Options provided in `forRoot`
+            </p>
           </div>
         </mat-tab>
       </mat-tab-group>
@@ -134,7 +144,8 @@
             <mat-bar-button
               (btnClick)="someFunc3()"
               [buttonId]="'button1'"
-              [options]="barButtonOptions"
+              [active]="barButtonOptionsActiveState"
+              [disabled]="false"
             ></mat-bar-button>
             <mat-bar-button
               (btnClick)="someFunc4()"
@@ -177,6 +188,16 @@
               unsubscribe to the disabled state in the component.
             </p>
             <pre><code [highlight]="disabledCode" language="['typescript']"></code></pre>
+            <p><strong>Global Options</strong></p>
+            <p>
+              Optionally pass default `MatProgressButtonOptions` in `forRoot` in side
+              your app.modlue.ts for each button as an array.
+            </p>
+            <pre><code [highlight]="globalOpts" language="['typescript']"></code></pre>
+            <pre><code [highlight]="globalOptsHtml" language="['html']"></code></pre>
+            <p>
+              [options] will override Global Options provided in `forRoot`
+            </p>
           </div>
         </mat-tab>
       </mat-tab-group>

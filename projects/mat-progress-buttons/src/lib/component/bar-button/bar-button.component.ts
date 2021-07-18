@@ -20,6 +20,8 @@ import { GLOBAL_CONFIG, GlobalConfig } from '../../mat-progress-buttons.injectio
 export class MatBarButtonComponent implements OnChanges {
   @Input() options: MatProgressButtonOptions;
   @Input() buttonId: string;
+  @Input() active: boolean;
+  @Input() disabled: boolean;
 
   @Output() btnClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
 
@@ -44,5 +46,11 @@ export class MatBarButtonComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     this.options = { ...this.globalConfig, ...this.options };
+    if (changes.active) {
+      this.options.active = changes.active.currentValue;
+    }
+    if (changes.disabled) {
+      this.options.disabled = changes.disabled.currentValue;
+    }
   }
 }
