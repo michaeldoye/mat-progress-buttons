@@ -9,7 +9,10 @@ import {
   Inject,
 } from '@angular/core';
 import { MatProgressButtonOptions } from '../../mat-progress-buttons.interface';
-import { GLOBAL_CONFIG, GlobalConfig } from '../../mat-progress-buttons.injection-token';
+import {
+  GLOBAL_CONFIG,
+  GlobalConfig,
+} from '../../mat-progress-buttons.injection-token';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -20,6 +23,8 @@ import { GLOBAL_CONFIG, GlobalConfig } from '../../mat-progress-buttons.injectio
 export class MatSpinnerButtonComponent implements OnChanges {
   @Input() options: MatProgressButtonOptions;
   @Input() buttonId: string;
+  @Input() active: boolean;
+  @Input() disabled: boolean;
 
   @Output() btnClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
 
@@ -43,6 +48,12 @@ export class MatSpinnerButtonComponent implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    if (changes.active) {
+      this.options.active = changes.active.currentValue;
+    }
+    if (changes.disabled) {
+      this.options.disabled = changes.disabled.currentValue;
+    }
     this.options = { ...this.globalConfig, ...this.options };
   }
 }
