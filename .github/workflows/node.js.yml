@@ -60,7 +60,7 @@ jobs:
             - ${{ github.event.commits[0].message }}
           draft: false
           prerelease: false
-          
+
       - name: NPM Publish
         uses: JS-DevTools/npm-publish@v1
         with:
