@@ -53,7 +53,7 @@ jobs:
         id: package-version
         uses: martinbeentjes/npm-get-version-action@master
         with:
-          path: dist/mat-progress-buttons/package.json
+          path: projects/mat-progress-buttons/package.json
 
       - name: Create Release
         id: create_release
