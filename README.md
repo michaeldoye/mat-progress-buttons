@@ -123,6 +123,9 @@ To set up fontawesome to work with `mat-icon` you can see instructions [here](ht
 
 Use the `icon` property on the `options` object
 
+**Note**: Bar Button does not support the `fab` style, currently.
+
+
 ```
   btnOpts: MatProgressButtonOptions = {
     active: false,
@@ -195,13 +198,47 @@ export class SomeComponent {
 
   // Click handler
   btnClick(): void {
-    this.btnOpts.active = true;
+    this.btnOpts = { ...this.btnOpts, active: true };
     setTimeout(() => {
-      this.btnOpts.active = false;
+      this.btnOpts = { ...this.btnOpts, active: false };
     }, 3350);
   }
 };
 ```
+
+### Global Options
+
+Optionally pass default `MatProgressButtonOptions` in `forRoot` in side your app.modlue.ts for each button as an array. 
+
+```typescript
+const button1: MatProgressButtonOptions = {
+  id: 'button1', // Id should match the [buttonId] input
+  ...
+};
+
+const button2: MatProgressButtonOptions = {
+  id: 'button2', // Id should match the [buttonId] input
+  ...
+};
+
+@NgModule({
+  imports: [
+    MatProgressButtonsModule.forRoot([button1, button2]),
+  ],
+  declarations: [HomeComponent],
+})
+```
+
+#### NB: add the id above should match the id provided in the `[buttonId]` input.
+
+```html
+<mat-bar-button
+  (btnClick)="someFunc3()"
+  [buttonId]="'button1'"
+  [options]="barButtonOptions"
+></mat-bar-button>
+```
+`[options]` on the component will override Global Options provided in `forRoot`
 
 ### Overriding default CSS
 
@@ -211,22 +248,21 @@ Example:
 
 CSS:
 
-```
-.class_name {
-    background-color: red; // etc.
+```css
+.class-name {
+    background-color: red;
 }
 ```
 
 TS:
 
-```
+```typescript
 @Component({
   ...,
-  encapsulation : ViewEncapsulation.None // Here
+  encapsulation: ViewEncapsulation.None
 })
+class MyComponent {}
 ```
-
-**Note**: Bar Button does not suppor the `fab` style, currently. Hope to have something like [this](https://codepen.io/DevVersion/pen/vGebGB) soon.
 
 <a name="run-demo-app-locally"/>
 
@@ -278,9 +314,9 @@ $ ng serve --open
 1. clone this [repo](https://github.com/michaeldoye/mat-progress-buttons.git)
 2. Install the dependencies by running `npm i`
 3. build the library `ng buld`
-3. test the library `ng test`
-4. Link the library `npm link ./dist/mat-progress-buttons`
- 5. Navigate to the demo app's directory:
+4. test the library `ng test`
+5. Link the library `npm link ./dist/mat-progress-buttons`
+6. Navigate to the demo app's directory:
   - `cd demo`
   - `npm i`
   - `npm start`
