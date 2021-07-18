@@ -10,9 +10,7 @@
     "build:prod": "ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "npm link mat-progress-buttons",
-    "builddemo": "gulp build && sudo gulp link && npm i && npm start"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
