@@ -6,11 +6,18 @@ describe('MatBarButtonComponent', () => {
   let component: MatBarButtonComponent;
   let fixture: ComponentFixture<MatBarButtonComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      imports: [MatProgressButtonsModule]
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        imports: [
+          MatProgressButtonsModule.forRoot([{ active: true, text: 'test' }]),
+        ],
+        providers: [
+          { provide: 'Global Config', useValue: { active: true, text: 'test' } },
+        ],
+      }).compileComponents();
+    })
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MatBarButtonComponent);
@@ -20,7 +27,7 @@ describe('MatBarButtonComponent', () => {
       active: false,
       buttonColor: 'primary',
       text: 'test button',
-      disabled: false
+      disabled: false,
     };
     fixture.detectChanges();
   });
@@ -34,7 +41,7 @@ describe('MatBarButtonComponent', () => {
     component.btnClick.subscribe(spy);
 
     const event = new MouseEvent('click', { bubbles: true });
-    component.onClick(event);
+    component.handleClick(event);
 
     expect(spy).toHaveBeenCalled();
     expect(spy).toHaveBeenCalledWith(event);
@@ -46,7 +53,7 @@ describe('MatBarButtonComponent', () => {
 
     component.options = { active: true, text: 'test button' };
     const event = new MouseEvent('click', { bubbles: true });
-    component.onClick(event);
+    component.handleClick(event);
 
     expect(spy).not.toHaveBeenCalled();
   });
@@ -57,7 +64,7 @@ describe('MatBarButtonComponent', () => {
 
     component.options = { active: false, disabled: true, text: 'test button' };
     const event = new MouseEvent('click', { bubbles: true });
-    component.onClick(event);
+    component.handleClick(event);
 
     expect(spy).not.toHaveBeenCalled();
   });

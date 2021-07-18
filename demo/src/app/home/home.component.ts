@@ -7,7 +7,7 @@ import { MatProgressButtonOptions } from 'mat-progress-buttons';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
   strokedCode = `  import { Component } from '@angular/core';
@@ -48,9 +48,9 @@ export class HomeComponent implements OnInit {
 
     // Click handler
     btnClick(): void {
-      this.btnOpts.active = true;
+      this.btnOpts = { ...this.btnOpts, active: true };
       setTimeout(() => {
-        this.btnOpts.active = false;
+        this.btnOpts = { ...this.btnOpts, active: false };
       }, 3350);
     }
   }`;
@@ -99,9 +99,9 @@ export class HomeComponent implements OnInit {
 
     // Click handler
     btnClick(): void {
-      this.btnOpts.active = true;
+      this.btnOpts = { ...this.btnOpts, active: true };
       setTimeout(() => {
-        this.btnOpts.active = false;
+        this.btnOpts = { ...this.btnOpts, active: false };
       }, 3350);
     }
   }`;
@@ -157,7 +157,7 @@ export class HomeComponent implements OnInit {
     spinnerColor: 'primary',
     fullWidth: false,
     disabled: false,
-    mode: 'indeterminate'
+    mode: 'indeterminate',
   };
 
   spinnerButtonOptions3: MatProgressButtonOptions = {
@@ -190,36 +190,16 @@ export class HomeComponent implements OnInit {
     icon: {
       fontSet: 'fa',
       fontIcon: 'fa-heart',
-      inline: true
+      inline: true,
     },
   };
 
   barButtonOptions: MatProgressButtonOptions = {
-    active: false,
     text: 'Stroked Button',
-    buttonColor: 'accent',
-    barColor: 'accent',
-    raised: false,
-    stroked: true,
-    mode: 'indeterminate',
-    value: 0,
-    disabled: false,
-    customClass: 'some-other-class',
-    buttonIcon: {
-      fontIcon: 'favorite',
-    },
   };
 
   barButtonOptions1: MatProgressButtonOptions = {
-    active: false,
     text: 'Raised Button',
-    buttonColor: 'primary',
-    barColor: 'primary',
-    raised: true,
-    stroked: false,
-    mode: 'indeterminate',
-    value: 0,
-    disabled: false
   };
 
   barButtonOptions2: MatProgressButtonOptions = {
@@ -231,7 +211,7 @@ export class HomeComponent implements OnInit {
     stroked: false,
     mode: 'indeterminate',
     value: 0,
-    disabled: false
+    disabled: false,
   };
 
   barButtonOptions3: MatProgressButtonOptions = {
@@ -244,7 +224,7 @@ export class HomeComponent implements OnInit {
     flat: true,
     mode: 'indeterminate',
     value: 0,
-    disabled: false
+    disabled: false,
   };
 
   constructor(private titleService: Title) {}
@@ -258,65 +238,65 @@ export class HomeComponent implements OnInit {
   }
 
   someFunc(): void {
-    this.spinnerButtonOptions.active = true;
+    this.spinnerButtonOptions = { ...this.spinnerButtonOptions, active: true };
     setTimeout(() => {
-      this.spinnerButtonOptions.active = false;
+      this.spinnerButtonOptions = { ...this.spinnerButtonOptions, active: false };
     }, 3350);
   }
 
   someFunc1(): void {
-    this.spinnerButtonOptions1.active = true;
+    this.spinnerButtonOptions1 = { ...this.spinnerButtonOptions1, active: true };
     setTimeout(() => {
-      this.spinnerButtonOptions1.active = false;
+      this.spinnerButtonOptions1 = { ...this.spinnerButtonOptions1, active: false };
     }, 3350);
   }
 
   someFunc2(): void {
-    this.spinnerButtonOptions2.active = true;
+    this.spinnerButtonOptions2 = { ...this.spinnerButtonOptions2, active: true };
     setTimeout(() => {
-      this.spinnerButtonOptions2.active = false;
+      this.spinnerButtonOptions2 = { ...this.spinnerButtonOptions2, active: false };
     }, 3350);
   }
 
   someFunc3(): void {
-    this.barButtonOptions.active = true;
+    this.barButtonOptions = { ...this.barButtonOptions, active: true };
     setTimeout(() => {
-      this.barButtonOptions.active = false;
+      this.barButtonOptions = { ...this.barButtonOptions, active: false };
     }, 3350);
   }
 
   someFunc4(): void {
-    this.barButtonOptions1.active = true;
+    this.barButtonOptions1 = { ...this.barButtonOptions1, active: true };
     setTimeout(() => {
-      this.barButtonOptions1.active = false;
+      this.barButtonOptions1 = { ...this.barButtonOptions1, active: false };
     }, 3350);
   }
 
   someFunc5(): void {
-    this.barButtonOptions2.active = true;
+    this.barButtonOptions2 = { ...this.barButtonOptions2, active: true };
     setTimeout(() => {
-      this.barButtonOptions2.active = false;
+      this.barButtonOptions2 = { ...this.barButtonOptions2, active: false };
     }, 3350);
   }
 
   someFunc6(): void {
-    this.spinnerButtonOptions3.active = true;
+    this.spinnerButtonOptions3 = { ...this.spinnerButtonOptions3, active: true };
     setTimeout(() => {
-      this.spinnerButtonOptions3.active = false;
+      this.spinnerButtonOptions3 = { ...this.spinnerButtonOptions3, active: false };
     }, 3350);
   }
 
   someFunc7(): void {
-    this.barButtonOptions3.active = true;
+    this.barButtonOptions3 = { ...this.barButtonOptions3, active: true };
     setTimeout(() => {
-      this.barButtonOptions3.active = false;
+      this.barButtonOptions3 = { ...this.barButtonOptions3, active: false };
     }, 3350);
   }
 
   someFunc8(): void {
-    this.spinnerButtonOptions4.active = true;
+    this.spinnerButtonOptions4 = { ...this.spinnerButtonOptions4, active: true };
     setTimeout(() => {
-      this.spinnerButtonOptions4.active = false;
+      this.spinnerButtonOptions4 = { ...this.spinnerButtonOptions4, active: false };
     }, 3350);
   }
 }
