@@ -42,15 +42,6 @@ jobs:
         name: build-artifact
         path: dist
 
-    - name: Bump Version
-      id: version-bump
-      uses: "phips28/gh-action-bump-version@master"
-      with:
-        tag-prefix: ''
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PACKAGEJSON_DIR:  'projects/mat-progress-buttons'
-
     - name: NPM Publish
       uses: JS-DevTools/npm-publish@v1
       with:
