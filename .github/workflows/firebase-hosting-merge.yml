@@ -15,6 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm install
+      - run: npm link mat-progress-buttons
       - run: npm run build:prod
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
