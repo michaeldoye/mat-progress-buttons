@@ -21,13 +21,13 @@
   },
   "private": false,
   "peerDependencies": {
-    "@angular/common": "^11.0.5",
-    "@angular/core": "^11.0.5",
-    "@angular/cdk": "^11.0.3",
-    "@angular/material": "^11.0.3"
+    "@angular/common": "^12.1.2",
+    "@angular/core": "^12.1.2",
+    "@angular/cdk": "^12.1.1",
+    "@angular/material": "^12.1.1"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.3.0"
   },
   "engines": {
     "node": ">=12.0.0"
