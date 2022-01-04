@@ -47,6 +47,14 @@ export class MatSpinnerButtonComponent implements OnChanges {
       : this.options;
   }
 
+  private mergeObjects(globalOptions: MatProgressButtonOptions, options: MatProgressButtonOptions): void {
+    for (const key in globalOptions) {
+      if (options[key] === undefined) {
+        options[key] = globalOptions[key];
+      }
+    }
+  }
+
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.active) {
       this.options.active = changes.active.currentValue;
@@ -54,6 +62,6 @@ export class MatSpinnerButtonComponent implements OnChanges {
     if (changes.disabled) {
       this.options.disabled = changes.disabled.currentValue;
     }
-    this.options = { ...this.globalConfig, ...this.options };
+    this.mergeObjects(this.globalConfig, this.options);
   }
 }
