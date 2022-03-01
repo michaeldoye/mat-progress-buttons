@@ -74,8 +74,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mat-progress-buttons-demo:build",
-            "hmrWarning": false
+            "browserTarget": "mat-progress-buttons-demo:build"
           },
           "configurations": {
             "production": {

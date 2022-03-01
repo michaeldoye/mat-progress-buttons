@@ -5,7 +5,8 @@
     "baseUrl": "./",
     "types": ["node"],
     "paths": {
-      "@angular/*": ["../node_modules/@angular/*"]
+      "@angular/*": ["../node_modules/@angular/*"],
+      "mat-progress-buttons": ["../../projects/mat-progress-buttons/src/public-api.ts"]
     },
     "typeRoots": [
       "node_modules/@types"
