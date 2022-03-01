@@ -17,7 +17,7 @@ describe('HeaderComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
-        NgbCollapseModule.forRoot()
+        NgbCollapseModule
       ],
       declarations: [
         HeaderComponent,
@@ -48,9 +48,8 @@ describe('HeaderComponent', () => {
   });
 
   it('can get RouterLinks from template', () => {
-    expect(links.length).toBe(2, "should have 2 links");
+    expect(links.length).toBe(1, "should have 1 link");
     expect(links[0].linkParams).toBe('/home', "1st link should go to Home");
-    expect(links[1].linkParams).toBe('/getting-started', "2nd link should go to GettingStarted");
   });
 
   it('can click Home link in template', () => {
@@ -65,15 +64,4 @@ describe('HeaderComponent', () => {
     expect(homeLink.navigatedTo).toBe('/home');
   });
 
-  it('can click GettingStarted link in template', () => {
-    const gettingStartedLinkDe = linkDes[1];
-    const gettingStartedLink = links[1];
-
-    expect(gettingStartedLink.navigatedTo).toBeNull("link should not have navigated yet");
-
-    gettingStartedLinkDe.triggerEventHandler('click', null);
-    fixture.detectChanges();
-
-    expect(gettingStartedLink.navigatedTo).toBe('/getting-started');
-  });
 });

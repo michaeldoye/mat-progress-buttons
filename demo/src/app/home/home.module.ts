@@ -57,8 +57,7 @@ const button2: MatProgressButtonOptions = {
     MatButtonModule,
     MatTabsModule,
     MatToolbarModule,
-    MatTooltipModule,
-    MatProgressButtonsModule,
+    MatTooltipModule
   ],
   declarations: [HomeComponent],
 })
